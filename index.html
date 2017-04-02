@@ -25,7 +25,8 @@
     <div id="title-container">
         <div class="spacer"></div>
         <div id="title-wrap">
-            <h1 id="title">Emily Nguyen&nbsp;&nbsp;/&nbsp;&nbsp;Designer&nbsp;&nbsp;/&nbsp;&nbsp;Developer</h1> </div>
+            <div id="title">Emily Nguyen&nbsp;&nbsp;/&nbsp;&nbsp;Designer&nbsp;&nbsp;/&nbsp;&nbsp;Developer</div>
+        </div>
     </div>
     <div id="intro">
         <div class="spacer"></div>
@@ -166,14 +167,39 @@
     </div>
     <div id="content-container">
         <div id="content">
-            <div id="bio" </div> </div>
-            <!-- Skrollr stylesheets -->
-            <script type="text/javascript" src="/js/skrollr.stylesheets.js"></script>
-            <!-- Skrollr -->
-            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.27/skrollr.min.js"></script>
-            <script type="text/javascript">
-                var s = skrollr.init();
-            </script>
+            <div id="about">
+                <h1>Hi, I'm Emily!</h1>
+                <p>I study Mathematics-Computer Science at the University of California, San Diego. You can find me playing around with Adobe Illustrator when I'm not programming. As someone who is keen on the intersection of problem solving and artistic creation, I am an aspiring UI/UX engineer.</p>
+            </div>
+            <div id="showcase">
+                <div class="item">
+                    <h2><img src="icons/experience.svg"><br>Experience</h2>
+                    <p>Web Developer at UCSD Alumni and Community Engagement</p> <span class="date">May 2016 - Present</span> </div>
+                <div class="item">
+                    <h2><img src="icons/skills.svg"><br>Skills</h2>
+                    <p>HTML, CSS, JavaScript, Sketch, Illustrator, and more</p>
+                </div>
+                <div class="item">
+                    <h2><img src="icons/education.svg"><br>Education</h2>
+                    <p>B.S. Mathematics-Computer Science University of California, San Diego</p> <span class="date">2019</span> </div>
+            </div>
+            <div id="projects">
+                <h1>Projects</h1>
+                <div id="filters"><span style="text-transform: uppercase; font-weight: bolder;font-style: normal;">Filter:</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; all&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UI/UX&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;graphic design</div>
+                <div class="container">
+                    <div class="item"><img src="projects/base-converter.png"></div>
+                    <div class="item"><img src="projects/bakery.png"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Skrollr stylesheets -->
+    <script type="text/javascript" src="/js/skrollr.stylesheets.js"></script>
+    <!-- Skrollr -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.27/skrollr.min.js"></script>
+    <script type="text/javascript">
+        var s = skrollr.init();
+    </script>
 </body>
 
 </html>
