@@ -1,13 +1,13 @@
 #intro {
     background-clor: #36383A;
     background-color: rgb(54, 56, 59);
-    height: calc(100vh + 1000px);
+    height: calc(100vh + 1400px);
     position: relative;
     z-index: -100;
 }
 
 #intro .spacer {
-    height: 800px;
+    height: 1200px;
     display: none;
 }
 
@@ -21,42 +21,6 @@ svg {
     position: fixed;
     height: 100vh;
     width: 100vw;
-    -skrollr-animation-name: svg-animation;
-}
-
-@-skrollr-keyframes svg-animation {
-    0 {
-        position: fixed;
-    }
-    900 {
-        position: static !important;
-    }
-}
-
-#intro .spacer {
-    -skrollr-animation-name: intro-spacer-animation;
-}
-
-@-skrollr-keyframes intro-spacer-animation {
-    0 {
-        display: none;
-    }
-    800 {
-        display: none;
-    }
-}
-
-#title-container .spacer {
-    -skrollr-animation-name: title-spacer-animation;
-}
-
-@-skrollr-keyframes title-spacer-animation {
-    0 {
-        display: block;
-    }
-    00 {
-        display: block;
-    }
 }
 
 #title {
@@ -66,18 +30,18 @@ svg {
 @-skrollr-keyframes title-animation {
     0 {
         position: fixed;
-        bottom: 42vh;
-        color: rgb(220, 240,255);
+        bottom: 43vh;
+        color: rgb(220, 240, 255);
     }
-    800 {
+    1200 {
         position: fixed;
-        bottom: 0px;
-         color: rgb(255,255,255);
+        bottom: 0vh;
+        color: rgb(255, 255, 255);
     }
-    1000 {
+    1400 {
         position: relative;
-        bottom: 0px;
-        color: rgb(255,255,255);
+        bottom: 0vh;
+        color: rgb(255, 255, 255);
     }
 }
 
@@ -121,7 +85,7 @@ svg {
     0 {
         transform: translate(-60vw, -60vh)rotate(180deg);
     }
-    800 {
+    1000 {
         transform: translate(0px, 0px) rotate(0deg);
     }
 }
@@ -130,34 +94,34 @@ svg {
     100 {
         transform: translate(-60vw, -60vh) rotate(180deg);
     }
-    800 {
+    1050 {
         transform: translate(0px, 0px) rotate(0deg);
     }
 }
 
 @-skrollr-keyframes quad-1-animation-3 {
-    200 {
+    500 {
         transform: translate(-60vw, -60vh) rotate(180deg);
     }
-    800 {
+    1100 {
         transform: translate(0px, 0px) rotate(0deg);
     }
 }
 
 @-skrollr-keyframes quad-1-animation-4 {
-    300 {
+    700 {
         transform: translate(-60vw, -60vh) rotate(180deg);
     }
-    800 {
+    1150 {
         transform: translate(0px, 0px) rotate(0deg);
     }
 }
 
 @-skrollr-keyframes quad-1-animation-5 {
-    400 {
+    800 {
         transform: translate(-60vw, -60vh) rotate(180deg);
     }
-    800 {
+    1200 {
         transform: translate(0px, 0px) rotate(0deg);
     }
 }
@@ -189,7 +153,7 @@ svg {
     0 {
         transform: translate(60vw, -60vh) rotate(180deg);
     }
-    800 {
+    1000 {
         transform: translate(0px, 0px) rotate(0deg);
     }
 }
@@ -198,34 +162,34 @@ svg {
     100 {
         transform: translate(60vw, -60vh) rotate(180deg);
     }
-    800 {
+    1050 {
         transform: translate(0px, 0px) rotate(0deg);
     }
 }
 
 @-skrollr-keyframes quad-2-animation-3 {
-    200 {
+    500 {
         transform: translate(60vw, -60vh) rotate(180deg);
     }
-    800 {
+    1100 {
         transform: translate(0px, 0px) rotate(0deg);
     }
 }
 
 @-skrollr-keyframes quad-2-animation-4 {
-    300 {
+    700 {
         transform: translate(60vw, -60vh) rotate(180deg);
     }
-    800 {
+    1150 {
         transform: translate(0px, 0px) rotate(0deg);
     }
 }
 
 @-skrollr-keyframes quad-2-animation-5 {
-    400 {
+    800 {
         transform: translate(60vw, -60vh) rotate(180deg);
     }
-    800 {
+    1200 {
         transform: translate(0px, 0px) rotate(0deg);
     }
 }
@@ -257,7 +221,7 @@ svg {
     0 {
         transform: translate(60vw, 60vh) rotate(180deg);
     }
-    800 {
+    1000 {
         transform: translate(0px, 0px) rotate(0deg);
     }
 }
@@ -266,34 +230,34 @@ svg {
     100 {
         transform: translate(60vw, 60vh) rotate(180deg);
     }
-    800 {
+    1050 {
         transform: translate(0px, 0px) rotate(0deg);
     }
 }
 
 @-skrollr-keyframes quad-3-animation-3 {
-    200 {
+    500 {
         transform: translate(60vw, 60vh) rotate(180deg);
     }
-    800 {
+    1100 {
         transform: translate(0px, 0px) rotate(0deg);
     }
 }
 
 @-skrollr-keyframes quad-3-animation-4 {
-    300 {
+    700 {
         transform: translate(60vw, 60vh) rotate(180deg);
     }
-    800 {
+    1150 {
         transform: translate(0px, 0px) rotate(0deg);
     }
 }
 
 @-skrollr-keyframes quad-3-animation-5 {
-    400 {
+    800 {
         transform: translate(60vw, 60vh) rotate(180deg);
     }
-    800 {
+    1200 {
         transform: translate(0px, 0px) rotate(0deg);
     }
 }
@@ -325,7 +289,7 @@ svg {
     0 {
         transform: translate(-60vw, 60vh) rotate(180deg);
     }
-    800 {
+    1000 {
         transform: translate(0px, 0px) rotate(0deg);
     }
 }
@@ -334,34 +298,34 @@ svg {
     100 {
         transform: translate(-60vw, 60vh) rotate(180deg);
     }
-    800 {
+    1050 {
         transform: translate(0px, 0px) rotate(0deg);
     }
 }
 
 @-skrollr-keyframes quad-4-animation-3 {
-    200 {
+    500 {
         transform: translate(-60vw, 60vh) rotate(180deg);
     }
-    800 {
+    1100 {
         transform: translate(0px, 0px) rotate(0deg);
     }
 }
 
 @-skrollr-keyframes quad-4-animation-4 {
-    300 {
+    700 {
         transform: translate(-60vw, 60vh) rotate(180deg);
     }
-    800 {
+    1150 {
         transform: translate(0px, 0px) rotate(0deg);
     }
 }
 
 @-skrollr-keyframes quad-4-animation-5 {
-    400 {
+    800 {
         transform: translate(-60vw, 60vh) rotate(180deg);
     }
-    800 {
+    1200 {
         transform: translate(0px, 0px) rotate(0deg);
     }
 }

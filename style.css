@@ -47,6 +47,18 @@ body {
     font-size: 32px;
 }
 
+h1,
+h2,
+p,
+a,
+img,
+#title {
+    -webkit-transition: font 0.3s ease;
+    -moz-transition: font 0.3s ease;
+    -o-transition: font 0.3s ease;
+    -ms-transition: font 0.3s ease;
+}
+
 h1 {
     font-size: 36px;
     letter-spacing: 0.4px;
@@ -86,7 +98,7 @@ p {
 }
 
 #title-container .spacer {
-    height: calc(100vh + 596px);
+    height: calc(100vh + 996px);
     width: 100vw;
 }
 
@@ -100,8 +112,9 @@ p {
     z-index: 1000;
     display: block;
     position: fixed;
-    padding: 25px 45px;
+    padding: 35px 35px;
     text-shadow: rgba(0, 0, 0, 0.3) 1px 1px 5px;
+    white-space: nowrap;
 }
 
 #content-container {
@@ -152,10 +165,13 @@ p {
 }
 
 .date {
+    display: block;
     font-weight: bolder;
     text-transform: uppercase;
     font-size: 10px;
-    letter-spacing: .92px;
+    letter-spacing: .8px;
+    margin-top: 20px;
+    line-height: 11px !important;
 }
 
 #projects {
@@ -180,4 +196,26 @@ p {
 
 #projects img {
     width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+    #title {
+        font-size: 17px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    #about {
+        padding: 5px;
+    }
+    #showcase p {
+        font-size: 14px;
+        line-height: 20px;
+        padding: 0px 5px;
+    }
+    #showcase .item {
+        padding: 0px;
+    }
 }
