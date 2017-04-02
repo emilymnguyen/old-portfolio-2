@@ -1,0 +1,94 @@
+html,
+body {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('/Aileron/aileron-bold-webfont.woff2') format('woff2'), url('/Aileron/aileron-bold-webfont.woff') format('woff');
+    font-weight: bolder;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('/Aileron/aileron-light-webfont.woff2') format('woff2'), url('/Aileron/aileron-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('/Aileron/aileron-lightitalic-webfont.woff2') format('woff2'), url('/Aileron/aileron-lightitalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('/Aileron/aileron-semibold-webfont.woff2') format('woff2'), url('/Aileron/aileron-semibold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aileron';
+    src: url('/Aileron/aileron-semibolditalic-webfont.woff2') format('woff2'), url('/Aileron/aileron-semibolditalic-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+}
+
+body {
+    font-family: 'Aileron', 'Arial', sans-serif;
+    color: #5A5F63;
+    font-size: 32px;
+}
+
+h1 {
+    font-size: 24px;
+    color: #DDF0FF;
+}
+
+#title-container {
+    height: calc(100vh + 800px);
+    width: 100vw;
+    text-align: center;
+    position: absolute;
+}
+
+#title-wrap {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#title-container .spacer {
+    height: calc(100vh + 596px);
+    width: 100vw;
+}
+
+
+/* adjust padding for responsive design */
+
+#title {
+    z-index: 1000;
+    display: block;
+    position: fixed;
+    padding: 25px 45px;
+    text-shadow: rgba(0, 0, 0, 0.3) 1px 1px 5px;
+    "
+
+}
+
+#content-container {
+    z-index: 1000;
+    background-color: white;
+    height: 100vh;
+    box-shadow: rgba(0, 0, 0, 0.3) 1px 1px 60px 0px;
+    display: flex;
+    justify-content: center;
+}
