@@ -1,7 +1,7 @@
 #intro {
     background-clor: #36383A;
     background-color: rgb(54, 56, 59);
-    background-color: #f27360;
+    background-color: var(--salmon);
     height: calc(100vh + 1400px);
     position: relative;
     z-index: -100;
@@ -51,14 +51,30 @@ svg {
     0 {
         position: fixed;
         bottom: 43vh;
+        z-index: 1;
     }
     1200 {
         position: fixed;
         bottom: 0vh;
+        z-index: -1;
     }
     1400 {
         position: fixed;
         bottom: 0vh;
+        z-index: -1;
+    }
+}
+
+#scroll {
+    -skrollr-animation-name: scroll-animation;
+}
+
+@-skrollr-keyframes scroll-animation {
+    0 {
+        opacity: 0.5;
+    }
+    1200 {
+        opacity: 0;
     }
 }
 
