@@ -1,6 +1,7 @@
 #intro {
     background-clor: #36383A;
     background-color: rgb(54, 56, 59);
+    background-color: #f27360;
     height: calc(100vh + 1400px);
     position: relative;
     z-index: -100;
@@ -23,6 +24,25 @@ svg {
     width: 100vw;
 }
 
+#nav {
+    -skrollr-animation-name: nav-animation;
+}
+
+@-skrollr-keyframes nav-animation {
+    0 {
+        opacity: 0;
+        background-color: rgba(242, 115, 96, 0.0);
+    }
+    1200 {
+        opacity: 1;
+        background-color: rgba(242, 115, 96, 0.0);
+    }
+    2000 {
+        opacity: 1;
+        background-color: rgba(242, 115, 96, 0.95);
+    }
+}
+
 #title {
     -skrollr-animation-name: title-animation;
 }
@@ -31,17 +51,14 @@ svg {
     0 {
         position: fixed;
         bottom: 43vh;
-        color: rgb(220, 240, 255);
     }
     1200 {
         position: fixed;
         bottom: 0vh;
-        color: rgb(255, 255, 255);
     }
     1400 {
-        position: relative;
+        position: fixed;
         bottom: 0vh;
-        color: rgb(255, 255, 255);
     }
 }
 
