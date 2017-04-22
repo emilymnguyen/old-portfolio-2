@@ -50,16 +50,16 @@ var main = function () {
         // Get new active filter label
         var filter = $('#filters .active').text();
         // Filter: all
-        if (filter == "all") $('#work .item').show();
+        if (filter == "all") $('#work .item').slideDown();
         // Filter: UI/UX
         else if (filter == "UI/UX") {
-            $('.gd').hide();
-            $('.ux').show();
+            $('.gd').slideUp();
+            $('.ux').slideDown();
         }
         // Filter: graphic design
         else if (filter == "graphic design") {
-            $('.ux').hide();
-            $('.gd').show();
+            $('.ux').slideUp();
+            $('.gd').slideDown();
         }
     });
 };

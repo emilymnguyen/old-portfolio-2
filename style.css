@@ -200,7 +200,7 @@ ul {
     display: flex;
     justify-content: center;
     width: 80vw;
-    padding: 80px 0px 90px 0px;
+    padding: 80px 0px 30px 0px;
     text-align: center;
     flex-wrap: wrap;
     max-width: 800px;
@@ -380,6 +380,42 @@ ul {
     padding-right: 40px;
 }
 
+#contact .container {
+    margin-top: 15px;
+    line-height: 45px;
+}
+
+#contact .labels {
+    float: left;
+    text-align: right;
+    font-size: 14px;
+    letter-spacing: .86px;
+    font-family: 'Source Code Pro', 'Courier STD', monospace;
+    text-transform: uppercase;
+    margin-right: 20px;
+}
+
+#contact .labels a {
+    color: var(--salmon);
+}
+
+#contact .links {
+    float: right;
+    text-align: left;
+    font-size: 17px;
+    letter-spacing: .43px;
+    color: var(--dark-gray);
+    margin-left: 20px;
+}
+
+#contact a {
+    color: var(--gray);
+}
+
+#contact a:hover {
+    opacity: 0.2;
+}
+
 #push {
     height: 150px;
     background-color: white;
@@ -404,7 +440,7 @@ ul {
 }
 
 .footer a:hover {
-    opacity: 0.5;
+    opacity: 0.2;
 }
 
 @media only screen and (max-width: 900px) {
@@ -502,5 +538,11 @@ ul {
     }
     #work .desc {
         margin-top: 20px;
+    }
+    #content .labels {
+        margin-right: 4px;
+    }
+    #content .links {
+        margin-left: 4px;
     }
 }
