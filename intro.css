@@ -31,15 +31,15 @@ svg {
 @-skrollr-keyframes nav-animation {
     0 {
         opacity: 0;
-        background-color: rgba(242, 115, 96, 0.0);
+        background-color: rgba(242, 96, 96, 0.0);
     }
     1200 {
         opacity: 1;
-        background-color: rgba(242, 115, 96, 0.0);
+        background-color: rgba(242, 96, 96, 0.0);
     }
     2000 {
         opacity: 1;
-        background-color: rgba(242, 115, 96, 0.95);
+        background-color: rgba(242, 96, 96, 0.92);
     }
 }
 
@@ -75,6 +75,19 @@ svg {
     }
     1200 {
         opacity: 0;
+    }
+}
+
+#intro svg {
+    -skrollr-animation-name: intro-animation;
+}
+
+@-skrollr-keyframes intro-animation {
+    0 {
+        visibility: visible;
+    }
+    3000 {
+        visibility: hidden;
     }
 }
 

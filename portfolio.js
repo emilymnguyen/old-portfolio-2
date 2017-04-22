@@ -4,11 +4,35 @@ var main = function () {
         $('html, body').animate({
             scrollTop: 1400
         }, 2000);
+        return false;
     });
     $('#title').click(function () {
         $('html, body').animate({
             scrollTop: 1400
         }, 2000);
+        return false;
+    });
+    /* Nav */
+    $('#nav a').click(function () {
+        var i = $(this).index();
+        if (i == 0) {
+            $('html, body').animate({
+                scrollTop: $("#about").offset().top + -80
+            }, 1000);
+            return false;
+        }
+        else if (i == 1) {
+            $('html, body').animate({
+                scrollTop: $("#work").offset().top + -80
+            }, 1000);
+            return false;
+        }
+        else if (i == 3) {
+            $('html, body').animate({
+                scrollTop: $("#contact").offset().top + -80
+            }, 1000);
+            return false;
+        }
     });
     /* Work filters */
     $('#filters p').click(function () {
