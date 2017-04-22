@@ -43,6 +43,14 @@ p {
     -webkit-transition: all .2s linear;
 }
 
+a {
+    -o-transition: .4s;
+    -ms-transition: .4s;
+    -moz-transition: .4s;
+    -webkit-transition: .4s;
+    Transition: .4s;
+}
+
 h1 {
     font-size: 40px;
     letter-spacing: 0.4px;
@@ -108,6 +116,10 @@ a {
 #nav a {
     margin: 16px 25px;
     cursor: pointer;
+}
+
+#nav a:hover {
+    opacity: 0.2;
 }
 
 #nav li {
@@ -379,7 +391,20 @@ ul {
     right: 0;
     bottom: 0;
     left: 0;
-    height: 150px;
+    height: 80px;
+    text-align: center;
+}
+
+.footer a {
+    display: inline-block;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 30px;
+}
+
+.footer a:hover {
+    opacity: 0.5;
 }
 
 @media only screen and (max-width: 900px) {

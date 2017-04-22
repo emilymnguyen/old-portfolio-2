@@ -2,13 +2,13 @@ var main = function () {
     /* Intro scroll */
     $('#scroll').click(function () {
         $('html, body').animate({
-            scrollTop: 1400
+            scrollTop: 2000
         }, 2000);
         return false;
     });
     $('#title').click(function () {
         $('html, body').animate({
-            scrollTop: 1400
+            scrollTop: 2000
         }, 2000);
         return false;
     });
@@ -17,17 +17,23 @@ var main = function () {
         var i = $(this).index();
         if (i == 0) {
             $('html, body').animate({
+                scrollTop: 1800
+            }, 1000);
+            return false;
+        }
+        if (i == 1) {
+            $('html, body').animate({
                 scrollTop: $("#about").offset().top + -80
             }, 1000);
             return false;
         }
-        else if (i == 1) {
+        else if (i == 2) {
             $('html, body').animate({
                 scrollTop: $("#work").offset().top + -80
             }, 1000);
             return false;
         }
-        else if (i == 3) {
+        else if (i == 4) {
             $('html, body').animate({
                 scrollTop: $("#contact").offset().top + -80
             }, 1000);
