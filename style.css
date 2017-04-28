@@ -153,25 +153,24 @@ ul {
 /* adjust padding for responsive design */
 
 #title {
-    cursor: pointer;
     position: fixed;
     left: 0;
     right: 0;
-    padding-bottom: 25px;
     textshadow: rgba(0, 0, 0, 0.3) 1px 1px 5px;
     white-space: nowrap;
     z-index: 1;
     font-size: 36px;
     color: white;
+    background-olor: aqua;
     text-transform: lowercase;
-    bottom: !important 0;
+    top: 89vh;
 }
 
 #scroll {
-    font-family: 'Source Code Pro', 'Courier STD', monospace;
-    paddng: 0;
-    margin-bottom: -40px;
+    margi-bottom: -40px;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: center;
     justify-content: center;
     height: 30px;
     padding-top: 20px;
@@ -182,6 +181,7 @@ ul {
     height: 60px;
     top: 0;
     margin-top: 65px;
+    cursor: pointer;
 }
 
 #scroll svg:hover {
