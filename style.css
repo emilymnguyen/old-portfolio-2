@@ -1,6 +1,7 @@
 :root {
     --salmon: #f27360;
     --salmon: #F26060;
+    --salmon: #EC6A68;
     --dark-gray: #272A2D;
     --gray: #6A7279;
 }
@@ -37,13 +38,14 @@ img,
 h2,
 #title,
 p {
-    transition: all .2s linear;
-    -o-transition: all .2s linear;
-    -moz-transition: all .2s linear;
-    -webkit-transition: all .2s linear;
+    transition: font .2s linear;
+    -o-transition: font .2s linear;
+    -moz-transition: font .2s linear;
+    -webkit-transition: font .2s linear;
 }
 
-a {
+a,
+#scroll svg {
     -o-transition: .4s;
     -ms-transition: .4s;
     -moz-transition: .4s;
@@ -104,18 +106,20 @@ a {
     margin: 0px;
     position: fixed;
     color: white;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 14px;
     letter-spacing: 0px;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: center;
     justify-content: center;
-    font-style: italic;
     z-index: 100;
 }
 
 #nav a {
-    margin: 16px 25px;
+    margin: 16px 20px;
     cursor: pointer;
+    text-transform: lowercase;
 }
 
 #nav a:hover {
@@ -132,23 +136,17 @@ ul {
 
 #title-container {
     height: calc(100vh + 800px);
+    height: 100vh;
     width: 100vw;
     text-align: center;
     position: absolute;
-}
-
-#title-wrap {
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -ms-flex-align: center;
+    align-items: !important center;
+    -ms-flex-pack: center;
     justify-content: center;
-}
-
-#title-container .spacer {
-    height: calc(100vh + 996px);
-    width: 100vw;
+    font-weight: 500;
 }
 
 
@@ -156,27 +154,41 @@ ul {
 
 #title {
     cursor: pointer;
-    font-size: 42px;
-    color: white;
-    display: block;
     position: fixed;
-    padding: 20px 35px;
+    left: 0;
+    right: 0;
+    padding-bottom: 25px;
     textshadow: rgba(0, 0, 0, 0.3) 1px 1px 5px;
     white-space: nowrap;
-    text-transform: lowercase;
     z-index: 1;
+    font-size: 36px;
+    color: white;
+    text-transform: lowercase;
+    bottom: !important 0;
 }
 
 #scroll {
-    disay: none;
     font-family: 'Source Code Pro', 'Courier STD', monospace;
-    padding-top: 0px;
-    padding: 0;
-    margin-bottom: -60px;
-    opacity: 0.5;
+    paddng: 0;
+    margin-bottom: -40px;
+    display: flex;
+    justify-content: center;
+    height: 30px;
+    padding-top: 20px;
 }
 
-#scroll p {
+#scroll svg {
+    width: 60px;
+    height: 60px;
+    top: 0;
+    margin-top: 65px;
+}
+
+#scroll svg:hover {
+    opacity: 0.3;
+}
+
+#scroll > p {
     display: inline-block;
     font-size: 14px;
     cursor: pointer;
@@ -190,18 +202,21 @@ ul {
 #content-container {
     background-color: white;
     bo-shadow: rgba(0, 0, 0, 0.3) 1px 1px 60px 0px;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: center;
     justify-content: center;
-    /* temp */
-    heiht: 100%;
 }
 
 #content {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: center;
     justify-content: center;
     width: 80vw;
     padding: 80px 0px 30px 0px;
     text-align: center;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     max-width: 800px;
 }
@@ -222,6 +237,7 @@ ul {
     /* temp */
     heght: 100%;
     margin-top: 60px;
+    display: -ms-flexbox;
     display: flex;
     mx-width: 850px;
 }
@@ -294,8 +310,11 @@ ul {
 }
 
 #work .container {
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -445,9 +464,10 @@ ul {
 
 @media only screen and (max-width: 900px) {
     #title {
-        font-size: 30px;
-        padding-left: 0px;
-        padding-right: 0px;
+        paddig: 25px 0px;
+    }
+    #title {
+        font-size: 4vw;
     }
     #work .left p,
     #work .left h2,
@@ -465,13 +485,16 @@ ul {
     #work .desc p {
         margin: 12px 0px 0px 0px;
     }
+    #scroll svg {
+        width: 7vw;
+        height: 7vw;
+        margin-top: 8vw;
+    }
 }
 
 @media only screen and (max-width: 650px) {
     #title {
-        font-size: 22px;
-        padding-left: 0px;
-        padding-right: 0px;
+        pading: 30px 0px;
     }
     h2 {
         font-size: 24px;
@@ -484,11 +507,13 @@ ul {
     #showcase .date {
         font-size: 11px;
     }
+    #nav a {
+        margin: 18px 10px;
+    }
 }
 
 @media only screen and (max-width: 500px) {
     #title {
-        font-size: 17px;
         padding-left: 0px;
         padding-right: 0px;
     }
@@ -500,14 +525,11 @@ ul {
     }
     #showcase p {
         font-size: 14px;
-        line-height: 20px;
+        line-height: 22px;
         padding: 0px 12px;
     }
     #showcase .item {
         padding: 0px;
-    }
-    #nav a {
-        margin: 18px 10px;
     }
     #filters p {
         margin: 0px 5px 0px 5px;

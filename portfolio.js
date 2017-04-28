@@ -1,14 +1,40 @@
 var main = function () {
+    /* Un-fix intro on load */
+    if ($(window).scrollTop() > 2000) {
+        $('#intro svg').css('position', '');
+        $('#intro svg').css('margin-top', '2000px');
+    }
+    else {
+        $('#intro svg').css('margin-top', '0px');
+        $('#intro svg').css('position', 'fixed');
+    }
+    /* Un-fix intro on scroll */
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 2000) {
+            $('#intro svg').css('position', 'relative');
+            $('#intro svg').css('margin-top', '2000px');
+            /*
+                        $('#title').css('position', 'relative');
+                        $('#title').css('margin-top', '2607px');*/
+        }
+        else {
+            $('#intro svg').css('margin-top', '0px');
+            $('#intro svg').css('position', 'fixed');
+            /*
+                        $('#title').css('margin-top', '0px');
+                        $('#title').css('position', 'fixed');*/
+        }
+    });
     /* Intro scroll */
-    $('#scroll').click(function () {
+    $('#scroll p').click(function () {
         $('html, body').animate({
-            scrollTop: 2000
+            scrollTop: 1800
         }, 2000);
         return false;
     });
     $('#title').click(function () {
         $('html, body').animate({
-            scrollTop: 2000
+            scrollTop: 1800
         }, 2000);
         return false;
     });

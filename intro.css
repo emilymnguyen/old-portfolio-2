@@ -8,7 +8,7 @@
     z-index: -100;
 }
 
-#intro .spacer {
+#intro .sacer {
     height: 1800px;
     display: none;
 }
@@ -19,10 +19,16 @@
 }
 
 svg {
-    z-index: 0;
     position: fixed;
+    z-index: 0;
     height: 100vh;
     width: 100vw;
+}
+
+#title,
+#intro svg {
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateZ(0);
 }
 
 #nav {
@@ -32,15 +38,19 @@ svg {
 @-skrollr-keyframes nav-animation {
     0 {
         opacity: 0;
-        background-color: rgba(242, 96, 96, 0.0);
+        background-color: rgba(0, 0, 0, 0.0);
     }
     1800 {
         opacity: 1;
-        background-color: rgba(242, 96, 96, 0.0);
+        background-color: rgba(0, 0, 0, 0.0);
+    }
+    2550 {
+        opacity: 1;
+        background-color: rgba(236, 106, 104, 0.0);
     }
     2600 {
         opacity: 1;
-        background-color: rgba(242, 96, 96, 0.92);
+        background-color: rgba(236, 106, 104, 0.96);
     }
 }
 
@@ -50,17 +60,10 @@ svg {
 
 @-skrollr-keyframes title-animation {
     0 {
-        position: fixed;
-        bottom: 43vh;
+        bottom: 45vh;
         z-index: 1;
     }
     1800 {
-        position: fixed;
-        bottom: 0vh;
-        z-index: -1;
-    }
-    2000 {
-        position: fixed;
         bottom: 0vh;
         z-index: -1;
     }
@@ -72,7 +75,7 @@ svg {
 
 @-skrollr-keyframes scroll-animation {
     0 {
-        opacity: 0.5;
+        opacity: 1;
     }
     1800 {
         opacity: 0;
@@ -85,10 +88,10 @@ svg {
 
 @-skrollr-keyframes intro-animation {
     0 {
-        visibility: visible;
+        marin-top: 0px;
     }
-    3600 {
-        visibility: hidden;
+    1800 {
+        margn-top: 1800px;
     }
 }
 
