@@ -12,7 +12,6 @@ body {
     padding: 0 !important;
     -webkit-font-smoothing: antialiased;
     position: relative;
-    min-height: 100%;
 }
 
 body {
@@ -399,6 +398,10 @@ ul {
     padding-right: 40px;
 }
 
+#contact {
+    margin-bottom: 80px;
+}
+
 #contact .container {
     margin-top: 15px;
     line-height: 45px;
@@ -436,7 +439,7 @@ ul {
 }
 
 #push {
-    height: 150px;
+    height: 80px;
     background-color: white;
 }
 
