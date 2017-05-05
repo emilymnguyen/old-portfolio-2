@@ -31,7 +31,7 @@ var main = function () {
         return false;
     });
     /* Nav */
-    $('#nav a').click(function () {
+    $('#nav span').click(function () {
         var i = $(this).index();
         if (i == 0) {
             $('html, body').animate({
