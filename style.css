@@ -582,7 +582,20 @@ ul {
     }
 }
 
-@media only screen and (max-height: 350px) and (max-device-width: 480px) {
+@media only screen and (max-height: 350px) {
+    #intro {
+        display: none;
+    }
+    #title {
+        display: none;
+    }
+    #nav span:nth-child(1),
+    .slash {
+        display: none;
+    }
+}
+
+@media only screen and (max-device-width: 480px) {
     #intro {
         display: none;
     }
