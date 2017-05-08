@@ -44,7 +44,7 @@ p {
 }
 
 a,
-#scroll svg {
+#scroll-button svg {
     -o-transition: .4s;
     -ms-transition: .4s;
     -moz-transition: .4s;
@@ -130,9 +130,13 @@ a {
     opacity: 0.2;
 }
 
-#nav span {
+#nav span:not(.slash) {
     margin: 0px 5px;
 }
+
+#nav span:after {}
+
+#nav span:last-child():after {}
 
 #nav li {
     display: inline-block;
@@ -150,8 +154,10 @@ ul {
     position: absolute;
     display: -ms-flexbox;
     display: flex;
+    diplay: -webkit-flex;
+    display: -webkit-box;
     -ms-flex-align: center;
-    align-items: !important center;
+    algn-items: !important center;
     -ms-flex-pack: center;
     justify-content: center;
     font-weight: 500;
@@ -162,49 +168,38 @@ ul {
 
 #title {
     position: fixed;
-    left: 0;
-    right: 0;
     textshadow: rgba(0, 0, 0, 0.3) 1px 1px 5px;
     white-space: nowrap;
     z-index: 1;
+    top: calc(100% - 80px);
+    top: calc(100% - 10vh);
+    text-align: center;
     font-size: 36px;
+    width: 100%;
+}
+
+#title span {
     color: white;
-    background-olor: aqua;
     text-transform: lowercase;
-    top: 89vh;
 }
 
-#scroll {
-    margi-bottom: -40px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: center;
-    justify-content: center;
-    height: 30px;
-    padding-top: 20px;
-}
-
-#scroll svg {
+#scroll-button {
     width: 60px;
     height: 60px;
-    top: 0;
-    margin-top: 65px;
-    cursor: pointer;
-}
-
-#scroll svg:hover {
-    opacity: 0.3;
-}
-
-#scroll > p {
     display: inline-block;
-    font-size: 14px;
-    cursor: pointer;
-    color: white;
+    margin-top: 20px;
+    overflow: visible;
 }
 
-#scroll p:hover {
-    opacity: 0.5;
+#scroll-button svg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+#scroll-button svg:hover {
+    opacity: 0.3;
 }
 
 #content-container {
@@ -479,9 +474,6 @@ ul {
     #title {
         paddig: 25px 0px;
     }
-    #title {
-        font-size: 4vw;
-    }
     #work .left p,
     #work .left h2,
     #work .left a {
@@ -498,17 +490,20 @@ ul {
     #work .desc p {
         margin: 12px 0px 0px 0px;
     }
-    #scroll svg {
+    #scroll-button {
         width: 7vw;
         height: 7vw;
-        margin-top: 8vw;
+        margin-top: calc(1vw + 1vh);
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #title {
+        font-size: 4.5vw;
     }
 }
 
 @media only screen and (max-width: 650px) {
-    #title {
-        pading: 30px 0px;
-    }
     h2 {
         font-size: 24px;
     }
@@ -577,8 +572,25 @@ ul {
     #content .links {
         margin-left: 4px;
     }
-    #nav span {
-        margin: 0px -4px;
+    #nav span:not(.slash) {
+        margin: 0px -2px;
+    }
+    #nav p {
+        padding: 0;
         white-space: nowrap;
+        font-size: 13px;
+    }
+}
+
+@media only screen and (max-height: 350px) and (max-device-width: 480px) {
+    #intro {
+        display: none;
+    }
+    #title {
+        display: none;
+    }
+    #nav span:nth-child(1),
+    .slash {
+        display: none;
     }
 }

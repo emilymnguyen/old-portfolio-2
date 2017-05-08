@@ -33,11 +33,11 @@ svg {
 @-skrollr-keyframes nav-animation {
     0 {
         opacity: 0;
-        background-color: rgba(0, 0, 0, 0.0);
+        background-color: rgba(236, 106, 104, 0.0);
     }
     1800 {
         opacity: 1;
-        background-color: rgba(0, 0, 0, 0.0);
+        background-color: rgba(236, 106, 104, 0.0);
     }
     2550 {
         opacity: 1;
@@ -55,16 +55,16 @@ svg {
 
 @-skrollr-keyframes title-animation {
     0 {
-        transform: translate(0vw, -45vh);
+        transform: translate(0vw, -46vh);
         z-index: 1;
     }
     1800 {
-        transform: translate(0vw, 0vw);
+        transform: translate(0vw, 0vh);
         z-index: -1;
     }
 }
 
-#scroll {
+#scroll-button {
     -skrollr-animation-name: scroll-animation;
 }
 
