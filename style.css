@@ -99,23 +99,17 @@ a {
 }
 
 #nav {
-    background-color: rgba(236, 106, 104, 0.92);
-    backgound-color: rgba(255, 255, 255, 0.95);
+    margin: 40px 0px 10px 0px;
     width: 100%;
-    height: 50px;
-    margin: 0px;
-    position: fixed;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: center;
     justify-content: center;
-    z-index: 100;
 }
 
 #nav p {
     font-family: 'Source Code Pro', 'Courier STD', monospace;
-    color: white;
-    colr: var(--salmon);
+    color: var(--salmon);
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0px;
@@ -126,17 +120,17 @@ a {
     backround-color: rgba(255, 255, 255, 0.95);
 }
 
-#nav span:hover {
+#nav span:not(.active):hover {
     opacity: 0.2;
 }
 
-#nav span:not(.slash) {
+#nav span {
     margin: 0px 5px;
 }
 
-#nav span:after {}
-
-#nav span:last-child():after {}
+#nav .active {
+    font-weight: 800;
+}
 
 #nav li {
     display: inline-block;
@@ -217,7 +211,7 @@ ul {
     -ms-flex-pack: center;
     justify-content: center;
     width: 80vw;
-    padding: 80px 0px 30px 0px;
+    padding: 30px 0px 50px;
     text-align: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -239,7 +233,7 @@ ul {
 #showcase {
     /* temp */
     heght: 100%;
-    margin-top: 60px;
+    margin: 60px 0px;
     display: -ms-flexbox;
     display: flex;
     mx-width: 850px;
@@ -275,13 +269,6 @@ ul {
     opacity: 1;
 }
 
-#work {
-    /* temp */
-    heigt: 100%;
-    heigt: 700px;
-    margin-top: 70px;
-}
-
 #filters {
     margin: 10px 0px 60px 0px;
 }
@@ -310,6 +297,10 @@ ul {
 #filters .active {
     color: var(--salmon);
     font-weight: 600;
+}
+
+#work {
+    display: none;
 }
 
 #work .container {
@@ -404,7 +395,8 @@ ul {
 }
 
 #contact {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
+    display: none;
 }
 
 #contact .container {
@@ -572,7 +564,7 @@ ul {
     #content .links {
         margin-left: 4px;
     }
-    #nav span:not(.slash) {
+    #nav span {
         margin: 0px -2px;
     }
     #nav p {
@@ -589,10 +581,6 @@ ul {
     #title {
         display: none;
     }
-    #nav span:nth-child(1),
-    .slash {
-        display: none;
-    }
 }
 
 @media only screen and (max-device-width: 480px) {
@@ -600,10 +588,6 @@ ul {
         display: none;
     }
     #title {
-        display: none;
-    }
-    #nav span:nth-child(1),
-    .slash {
         display: none;
     }
 }

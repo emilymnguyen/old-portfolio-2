@@ -1,3 +1,34 @@
+function changePage(button) {
+    var label = $(button).text();
+    var target;
+    // Get div corresponding to button
+    if (label == "About Me") {
+        target = $("#about");
+    }
+    else if (label == "Work") {
+        target = $("#work");
+    }
+    else if (label == "Resume") {
+        // Link resume
+        return;
+    }
+    else if (label == "Contact") {
+        target = $("#contact");
+    }
+    // Return if target page is already active
+    if ($(target).hasClass("active")) {
+        return;
+    }
+    // Otherwise, switch page
+    $("#content > .active").hide();
+    $("#content > .active").removeClass("active");
+    $(target).addClass("active");
+    $("#content > .active").show();
+    // Update active nav button
+    $("#nav .active").removeClass("active");
+    $(button).addClass("active");
+    return;
+}
 var main = function () {
     /* Load/destroy skrollr */
     // initialize skrollr if the window width is large enough
@@ -45,31 +76,7 @@ var main = function () {
     });
     /* Nav */
     $('#nav span').click(function () {
-        var i = $(this).index();
-        if (i == 0) {
-            $('html, body').animate({
-                scrollTop: 1800
-            }, 1000);
-            return false;
-        }
-        if (i == 1) {
-            $('html, body').animate({
-                scrollTop: $("#about").offset().top + -80
-            }, 1000);
-            return false;
-        }
-        else if (i == 2) {
-            $('html, body').animate({
-                scrollTop: $("#work").offset().top + -80
-            }, 1000);
-            return false;
-        }
-        else if (i == 4) {
-            $('html, body').animate({
-                scrollTop: $("#contact").offset().top + -80
-            }, 1000);
-            return false;
-        }
+        changePage(this);
     });
     /* Work filters */
     $('#filters p').click(function () {

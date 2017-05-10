@@ -26,29 +26,6 @@ svg {
     -webkit-transform: translateZ(0);
 }
 
-#nav {
-    -skrollr-animation-name: nav-animation;
-}
-
-@-skrollr-keyframes nav-animation {
-    0 {
-        opacity: 0;
-        background-color: rgba(236, 106, 104, 0.0);
-    }
-    1800 {
-        opacity: 1;
-        background-color: rgba(236, 106, 104, 0.0);
-    }
-    2550 {
-        opacity: 1;
-        background-color: rgba(236, 106, 104, 0.0);
-    }
-    2600 {
-        opacity: 1;
-        background-color: rgba(236, 106, 104, 0.92);
-    }
-}
-
 #title {
     -skrollr-animation-name: title-animation;
 }
