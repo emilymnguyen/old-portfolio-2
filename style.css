@@ -1,7 +1,8 @@
 :root {
     --salmon: #f27360;
-    --salmon: #F26060;
     --salmon: #EC6A68;
+    --salmon: #94B9CB;
+    --salmon: #93CAE5;
     --dark-gray: #272A2D;
     --gray: #6A7279;
 }
@@ -110,9 +111,11 @@ a {
 #nav p {
     font-family: 'Source Code Pro', 'Courier STD', monospace;
     color: var(--salmon);
+    color: var(--dark-gray);
+    color: var(--light-gray);
     font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 0px;
+    font-size: 16px;
+    letter-spacing: 0.2px;
     margin: 12px 20px;
     cursor: pointer;
     text-transform: uppercase;
@@ -121,7 +124,8 @@ a {
 }
 
 #nav span:not(.active):hover {
-    opacity: 0.2;
+    opcity: 0.2;
+    font-weight: 600;
 }
 
 #nav span {
@@ -129,7 +133,8 @@ a {
 }
 
 #nav .active {
-    font-weight: 800;
+    font-weight: 600;
+    coor: var(--salmon);
 }
 
 #nav li {
@@ -210,17 +215,17 @@ ul {
     display: flex;
     -ms-flex-pack: center;
     justify-content: center;
-    width: 80vw;
+    width: 75vw;
     padding: 30px 0px 50px;
     text-align: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    max-width: 800px;
+    max-width: 900px;
 }
 
 #about {
     padding: 0px 20px;
-    max-width: 690px;
+    max-with: 690px;
 }
 
 #bio p {
@@ -228,6 +233,8 @@ ul {
     /* 0.4 px*/
     letter-spacing: 0.2px;
     line-height: 34px;
+    max-width: 690px;
+    display: inline-block;
 }
 
 #showcase {
@@ -255,7 +262,7 @@ ul {
 }
 
 #showcase p {
-    padding: 0px 20px;
+    padding: 0px 30px;
     margin-bottom: 0px;
     font-size: 16px;
     line-height
@@ -281,25 +288,30 @@ ul {
     color: var(--dark-gray);
     text-transform: uppercase;
     font-style: normal;
-    font-size: 13px;
+    font-size: 12px;
     font-family: 'Source Code Pro', 'Courier STD', monospace;
+    display: none;
 }
 
 #filters p {
-    font-size: 16px;
-    font-style: italic;
+    color: var(--light-gray);
+    opacity: 0.5;
+    font-size: 15px;
+    font-tyle: italic;
     display: inline-block;
     margin: 0px 10px 0px 10px;
     cursor: pointer;
 }
 
 #filters p:hover {
-    color: var(--salmon);
+    opacity: 1;
+    coor: var(--salmon);
     font-weight: 600;
 }
 
 #filters .active {
-    color: var(--salmon);
+    opacity: 1;
+    coor: var(--salmon);
     font-weight: 600;
 }
 
@@ -446,6 +458,7 @@ ul {
 
 .footer {
     background-color: var(--salmon);
+    backgrond-color: rgba(0, 0, 0, .04);
     position: absolute;
     right: 0;
     bottom: 0;
@@ -457,6 +470,7 @@ ul {
 .footer a {
     display: inline-block;
     color: #fff;
+    coor: var(--light-gray);
     font-size: 14px;
     font-weight: 600;
     margin-top: 30px;
