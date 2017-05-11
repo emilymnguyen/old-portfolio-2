@@ -22,6 +22,10 @@ body {
     font-size: 32px;
 }
 
+.no-scroll {
+    overflow: hidden;
+}
+
 h1,
 h2,
 p,
@@ -114,7 +118,7 @@ a {
     color: var(--dark-gray);
     color: var(--light-gray);
     font-weight: 500;
-    font-size: 16px;
+    font-size: 15px;
     letter-spacing: 0.2px;
     margin: 12px 20px;
     cursor: pointer;
@@ -355,7 +359,7 @@ ul {
 
 #work .left p,
 #work .left h2,
-#work .left span {
+#work .left .open {
     padding-left: 31px;
 }
 
@@ -364,17 +368,18 @@ ul {
     letter-spacing: 0px;
 }
 
-#work .desc span {
+#work .open {
     font-family: 'Source Code Pro', 'Courier STD', monospace;
     color: var(--salmon);
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: .86px;
     margin: 0px;
+    display: inline;
     cursor: pointer;
 }
 
-#work .desc span:hover {
+#work .open:hover {
     opacity: 0.2;
 }
 
@@ -406,8 +411,59 @@ ul {
 
 #work .right p,
 #work .right h2,
-#work .right span {
+#work .right .open {
     padding-right: 31px;
+}
+
+#work-expand .close {
+    position: absolute;
+    width: 100%;
+    text-align: right;
+}
+
+#work-expand .close p {
+    padding: 20px 30px;
+    margin: 0px;
+    cursor: pointer;
+    float: right;
+    font-size: 20px;
+}
+
+#work-expand {
+    display: none;
+}
+
+#work-expand .overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    overflow-y: scroll;
+    z-index: 1000;
+}
+
+#work-expand .container {
+    position: absolute;
+    display: block;
+    width: 70vw;
+    padding: 60px 0px 80px;
+}
+
+#work-expand .banner {
+    height: 300px;
+    width: 100vw;
+    /* margin-left: half of the side margins */
+    margin: 30px 0px 30px -15vw;
+    background-color: var(--salmon);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#work-epand h2 {
+    margin-bottom: 30px;
 }
 
 #contact {
@@ -478,134 +534,4 @@ ul {
 
 .footer a:hover {
     opacity: 0.2;
-}
-
-@media only screen and (max-width: 900px) {
-    #title {
-        paddig: 25px 0px;
-    }
-    #work .left p,
-    #work .left h2,
-    #work .left a {
-        padding-left: 30px;
-    }
-    #work .right p,
-    #work .right h2,
-    #work .right a {
-        padding-right: 30px;
-    }
-    #work .desc h2 {
-        margin-top: 0px;
-    }
-    #work .desc p {
-        margin: 12px 0px 0px 0px;
-    }
-    #scroll-button {
-        width: 7vw;
-        height: 7vw;
-        margin-top: calc(1vw + 1vh);
-    }
-}
-
-@media only screen and (max-width: 750px) {
-    #title {
-        font-size: 4.5vw;
-    }
-}
-
-@media only screen and (max-width: 650px) {
-    h2 {
-        font-size: 24px;
-    }
-    #showcase p {
-        font-size: 15px;
-        line-height: 23px;
-        padding: 0px 12px;
-    }
-    #showcase .date {
-        font-size: 11px;
-    }
-    #showcase img {
-        height: 70%;
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    #title {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-    #showcase h2 {
-        font-size: 18px;
-    }
-    #about {
-        padding: 5px;
-    }
-    #showcase p {
-        font-size: 14px;
-        line-height: 22px;
-        padding: 0px 12px;
-    }
-    #filters p {
-        margin: 0px 5px 0px 5px;
-    }
-    #work .right {
-        text-align: left;
-    }
-    #work img {
-        width: 100%;
-    }
-    #work .left .desc {
-        width: 100%;
-        clear: both;
-    }
-    #work .right .desc {
-        clear: both;
-        width: 100%;
-    }
-    #work .left p,
-    #work .left h2,
-    #work .left a {
-        padding: 0px 8px;
-    }
-    #work .right p,
-    #work .right h2,
-    #work .right a {
-        padding: 0px 8px;
-    }
-    #work .desc {
-        margin-top: 20px;
-    }
-    #content .labels {
-        margin-right: 4px;
-    }
-    #content .links {
-        margin-left: 4px;
-    }
-    #nav span {
-        margin: 0px -2px;
-    }
-    #nav p {
-        padding: 0;
-        white-space: nowrap;
-        font-size: 13px;
-    }
-}
-
-@media only screen and (max-height: 350px) {
-    #intro {
-        display: none;
-    }
-    #title {
-        display: none;
-    }
-}
-
-@media only screen and (max-device-width: 480px) {
-    #intro {
-        display: none;
-    }
-    #title {
-        display: none;
-    }
 }

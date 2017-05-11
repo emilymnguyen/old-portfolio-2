@@ -29,6 +29,16 @@ function changePage(button) {
     $(button).addClass("active");
     return;
 }
+
+function expandWork(button) {
+    $('body').addClass('no-scroll');
+    $('#work-expand').css('display', "block");
+}
+
+function closeWork() {
+    $('body').removeClass('no-scroll');
+    $('#work-expand').css('display', "none");
+}
 var main = function () {
     /* Load/destroy skrollr */
     // initialize skrollr if the window width is large enough
@@ -99,6 +109,13 @@ var main = function () {
             $('.ux').slideUp();
             $('.gd').slideDown();
         }
+    });
+    /* Work open/close buttons */
+    $('#work .open').click(function () {
+        expandWork(this);
+    });
+    $('#work-expand .close p').click(function () {
+        closeWork();
     });
 };
 $(document).ready(main);

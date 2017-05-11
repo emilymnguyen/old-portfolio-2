@@ -12,12 +12,29 @@
     <script type="text/javascript" src="portfolio.js"></script>
     <!-- Import css files -->
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="media-queries.css">
     <link rel="stylesheet" type="text/css" href="intro.css" data-skrollr-stylesheet>
     <meta charset="UTF-8">
     <title>Emily Nguyen</title>
 </head>
 
 <body>
+    <div id="work-expand">
+        <div class="overlay">
+            <div class="close">
+                <p>✕</p>
+            </div>
+            <div class="container">
+                <h2>Lorem Ipsum</h2>
+                <div class="banner">lsjdflsdjlfsa</div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In justo turpis, pharetra sit amet volutpat a, condimentum vitae quam. Pellentesque at libero odio. Aenean at consectetur odio. Sed dapibus nisi vitae sem lobortis, sit amet egestas purus vehicula. Sed vulputate aliquam elit laoreet faucibus. Quisque quis bibendum felis. Vestibulum ut auctor est. Praesent vitae ligula finibus, tristique sapien nec, semper orci. Duis scelerisque, tellus eget consectetur laoreet, orci massa imperdiet nisi, ac auctor nulla purus eget arcu. Sed accumsan facilisis semper. Maecenas convallis auctor tempus. Nam ac nunc ultrices, vestibulum nibh at, auctor nisi. Aliquam elementum, metus eget luctus fermentum, nisi erat porttitor leo, eu tristique sapien tortor ut augue. Integer elementum arcu vitae felis lacinia, vitae porttitor orci placerat. </p>
+                <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non erat maximus, iaculis metus sit amet, elementum sem. Nulla fermentum quis purus at cursus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu tristique dolor. Sed fermentum justo ut dapibus auctor. Curabitur sem dolor, dignissim id ullamcorper sed, vehicula eu lectus. Suspendisse pharetra tortor in augue congue, et ultricies mauris tincidunt. Duis luctus, arcu non facilisis dignissim, leo turpis viverra odio, ac varius tellus dui sit amet tellus. Vestibulum eu nisi pellentesque, porta lorem id, placerat nisi.</p>
+                <p> Vivamus eget arcu mattis, pulvinar lectus sit amet, aliquet enim. In eget convallis dui. Proin euismod tellus cursus est dignissim commodo. Nunc pellentesque ultricies mi quis condimentum. Ut tincidunt porttitor tincidunt. Etiam lobortis diam at ullamcorper tristique. Donec ut neque augue. Quisque et urna sed nibh sodales elementum eu sed ligula. In scelerisque ut nisi vitae dignissim. Nullam tincidunt tincidunt urna, ut luctus felis. Integer aliquet ut nisl a feugiat. Donec sit amet pulvinar est, eget ullamcorper enim.</p>
+                <p> Aenean sit amet massa nec nulla malesuada venenatis ut elementum velit. Proin commodo id lectus in tristique. Vivamus odio est, tempus nec tortor sed, hendrerit consequat eros. Suspendisse odio lectus, placerat fringilla efficitur luctus, posuere nec velit. Vestibulum sit amet lectus pretium, malesuada quam in, sollicitudin massa. Aliquam erat volutpat. Quisque consequat dapibus tortor eu sodales. Proin tristique erat sit amet ante iaculis condimentum. Praesent erat ex, condimentum vitae sapien sit amet, volutpat ultrices mi. Curabitur metus ex, tincidunt a odio sit amet, venenatis tempus sapien. Morbi tristique auctor mi sed condimentum. Mauris vitae condimentum orci, ac commodo lectus. Morbi sodales elit id enim congue consectetur.</p>
+                <p> Maecenas suscipit molestie purus, a malesuada nibh porttitor sit amet. Pellentesque eget luctus eros. Cras posuere nunc et quam sollicitudin, ac porttitor diam aliquam. Vivamus urna eros, pulvinar sed dignissim non, viverra et dolor. Donec euismod porta nibh, eu lacinia risus laoreet ac. Nullam neque nisl, suscipit non elit ut, gravida pretium lacus. Nam at feugiat diam. Etiam turpis justo, suscipit ac ipsum in, luctus feugiat nunc. Pellentesque at sapien sem. Curabitur pharetra massa at nibh feugiat mollis vel in nunc.</p>
+            </div>
+        </div>
+    </div>
     <div id="title-container">
         <div id="title"> <span>
                 Emily Nguyen&nbsp;&nbsp;/&nbsp;&nbsp;Designer&nbsp;&nbsp;/&nbsp;&nbsp;Developer</span>
@@ -189,6 +206,7 @@
                 <div id="bio">
                     <h1>Hi, I'm Emily!</h1>
                     <div class="underline"></div>
+                    <br>
                     <p>I study Mathematics-Computer Science at the University of California, San Diego. You can find me playing around with Adobe Illustrator when I'm not programming. As someone who is keen on the intersection of problem solving and artistic creation, I am an aspiring UI/UX engineer.</p>
                 </div>
                 <!--
@@ -239,12 +257,16 @@
                     <div class="item ux left"><img src="projects/base-converter.png">
                         <div class="desc">
                             <h2>Lorem ipsum dolor sit amet</h2>
-                            <p> Lorem ipsum dolor sit amet, nisl suavitate in sea, wisi falli eu cum. Vix eu aliquando voluptaria, pro veri quando ex, ut nam facer moderatius.</p><span>Learn more +</span></div>
+                            <p> Lorem ipsum dolor sit amet, nisl suavitate in sea, wisi falli eu cum. Vix eu aliquando voluptaria, pro veri quando ex, ut nam facer moderatius.</p>
+                            <div class="open">Learn more +</div>
+                        </div>
                     </div>
                     <div class="item gd right"><img src="projects/bakery.png">
                         <div class="desc">
                             <h2>Lorem ipsum dolor sit amet</h2>
-                            <p> Lorem ipsum dolor sit amet, nisl suavitate in sea, wisi falli eu cum. Vix eu aliquando voluptaria, pro veri quando ex, ut nam facer moderatius.</p><span>Learn more +</span></div>
+                            <p> Lorem ipsum dolor sit amet, nisl suavitate in sea, wisi falli eu cum. Vix eu aliquando voluptaria, pro veri quando ex, ut nam facer moderatius.</p>
+                            <div class="open">Learn more +</div>
+                        </div>
                     </div>
                 </div>
             </div>
