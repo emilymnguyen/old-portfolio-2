@@ -1,0 +1,126 @@
+@media only screen and (max-width: 900px) {
+    #title {
+        paddig: 25px 0px;
+    }
+    #work .left p,
+    #work .left h2,
+    #work .left .button {
+        padding-left: 30px;
+    }
+    #work .right p,
+    #work .right h2,
+    #work .right .button {
+        padding-right: 30px;
+    }
+    #work .desc h2 {
+        margin-top: 0px;
+    }
+    #work .desc p {
+        margin: 12px 0px 0px 0px;
+    }
+    #scroll-button {
+        width: 7vw;
+        height: 7vw;
+        margin-top: calc(1vw + 1vh);
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    #title {
+        font-size: 4.5vw;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    h2 {
+        font-size: 24px;
+    }
+    #showcase p {
+        font-size: 15px;
+        line-height: 23px;
+        padding: 0px 12px;
+    }
+    #showcase .date {
+        font-size: 11px;
+    }
+    #showcase img {
+        height: 70%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #title {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #showcase h2 {
+        font-size: 18px;
+    }
+    #about {
+        padding: 5px;
+    }
+    #showcase p {
+        font-size: 14px;
+        line-height: 22px;
+        padding: 0px 12px;
+    }
+    #work .right {
+        text-align: left;
+    }
+    #work img {
+        width: 100%;
+    }
+    #work .left .desc {
+        width: 100%;
+        clear: both;
+    }
+    #work .right .desc {
+        clear: both;
+        width: 100%;
+    }
+    #work .left p,
+    #work .left h2,
+    #work .left .button {
+        padding: 0px 8px;
+    }
+    #work .right p,
+    #work .right h2,
+    #work .right .button {
+        padding: 0px 8px;
+    }
+    #work .desc {
+        margin-top: 20px;
+    }
+    #content .labels {
+        margin-right: 4px;
+    }
+    #content .links {
+        margin-left: 4px;
+    }
+    #nav span {
+        margin: 0px -2px;
+    }
+    #nav p {
+        padding: 0;
+        white-space: nowrap;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-height: 350px) {
+    #intro {
+        display: none;
+    }
+    #title {
+        display: none;
+    }
+}
+
+@media only screen and (max-device-width: 480px) {
+    #intro {
+        display: none;
+    }
+    #title {
+        display: none;
+    }
+}
