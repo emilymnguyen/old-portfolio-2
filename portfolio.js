@@ -67,22 +67,36 @@ var main = function () {
         if ($(window).scrollTop() > 2000) {
             $('#intro svg').css('position', 'relative');
             $('#intro svg').css('margin-top', '2000px');
-            $('#title').css('position', 'relative');
-            $('#title').css('margin-top', '2000px');
+            $('#scroll-button-wrapper').css('position', 'absolute');
+            $('#scroll-button-wrapper').css('margin-top', '2000px');
+            $('#logo-wrapper').css('position', 'absolute');
+            $('#logo-wrapper').css('margin-top', '2000px');
         }
         else {
             $('#intro svg').css('margin-top', '0px');
             $('#intro svg').css('position', 'fixed');
-            $('#title').css('margin-top', '0px');
-            $('#title').css('position', 'fixed');
+            $('#scroll-button-wrapper').css('margin-top', '0px');
+            $('#scroll-button-wrapper').css('position', 'fixed');
+            $('#logo-wrapper').css('position', 'fixed');
+            $('#logo-wrapper').css('margin-top', '0px');
         }
     });
     /* Intro scroll */
-    $('#scroll-button').click(function () {
-        $('html, body').animate({
-            scrollTop: 1800
-        }, 2000);
-        return false;
+    $('.scroll-button').click(function () {
+        // Scroll to end of intro if height < 1800
+        if ($(window).scrollTop() < 1800) {
+            $('html, body').animate({
+                scrollTop: 1800
+            }, 2000);
+            return false;
+        }
+        // Otherwise, scroll to about me
+        else {
+            $('html, body').animate({
+                scrollTop: $("#nav").offset().top + -40
+            }, 1600);
+            return false;
+        }
     });
     /* Nav */
     $('#nav span').click(function () {

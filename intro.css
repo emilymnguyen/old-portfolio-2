@@ -1,6 +1,4 @@
 #intro {
-    background-clor: #36383A;
-    background-color: rgb(54, 56, 59);
     background-color: var(--salmon);
     /* 100vh + animation height + 200px */
     height: calc(100vh + 2000px);
@@ -13,26 +11,26 @@
     height: 100vh;
 }
 
-svg {
+#intro svg {
     position: fixed;
     z-index: 0;
     height: 100vh;
     width: 100vw;
 }
 
-#title,
+#tile,
 #intro svg {
     -webkit-backface-visibility: hidden;
     -webkit-transform: translateZ(0);
 }
 
-#title {
-    -skrollr-animation-name: title-animation;
+#logo-wrapper {
+    -skrollr-animation-name: logo-animation;
 }
 
-@-skrollr-keyframes title-animation {
+@-skrollr-keyframes logo-animation {
     0 {
-        transform: translate(0vw, -46vh);
+        transform: translate(0vw, 38vh);
         z-index: 1;
     }
     1800 {
@@ -41,16 +39,18 @@ svg {
     }
 }
 
-#scroll-button {
-    -skrollr-animation-name: scroll-animation;
+#scroll-button-wrapper {
+    -skrollr-animation-name: scroll-button-animation;
 }
 
-@-skrollr-keyframes scroll-animation {
+@-skrollr-keyframes scroll-button-animation {
     0 {
-        opacity: 0.9;
+        transform: translate(0vw, -36vh);
+        z-index: 1;
     }
     1800 {
-        opacity: 0;
+        transform: translate(0vw, 0vh);
+        z-index: 1;
     }
 }
 

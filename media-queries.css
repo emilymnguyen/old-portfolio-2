@@ -1,7 +1,5 @@
 @media only screen and (max-width: 900px) {
-    #title {
-        paddig: 25px 0px;
-    }
+
     #work .left p,
     #work .left h2,
     #work .left .button {
@@ -25,11 +23,7 @@
     }
 }
 
-@media only screen and (max-width: 750px) {
-    #title {
-        font-size: 4.5vw;
-    }
-}
+
 
 @media only screen and (max-width: 650px) {
     h2 {
@@ -67,7 +61,7 @@
     #work .right {
         text-align: left;
     }
-    #work img-container {
+    #work .img-container {
         width: 100%;
     }
     #work .left .desc {

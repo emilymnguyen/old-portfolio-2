@@ -31,7 +31,7 @@ h2,
 p,
 a,
 img,
-#title,
+#scroll-button-wrapper,
 {
     -webkit-transition: font 0.3s ease;
     -moz-transition: font 0.3s ease;
@@ -40,7 +40,7 @@ img,
 }
 
 h2,
-#title,
+#scroll-button-wrapper,
 p {
     transition: font .2s linear;
     -o-transition: font .2s linear;
@@ -49,7 +49,8 @@ p {
 }
 
 a,
-#scroll-button svg {
+#scroll-button svg,
+#filters p {
     -o-transition: .4s;
     -ms-transition: .4s;
     -moz-transition: .4s;
@@ -118,8 +119,8 @@ a {
     font-family: 'Source Code Pro', 'Courier STD', monospace;
     color: var(--salmon);
     color: var(--dark-gray);
-    color: var(--light-gray);
-    font-weight: 500;
+    clor: var(--light-gray);
+    font-weight: 400;
     font-size: 15px;
     letter-spacing: 0.2px;
     margin: 12px 20px;
@@ -130,16 +131,18 @@ a {
 }
 
 #nav span:not(.active):hover {
-    opcity: 0.2;
-    font-weight: 600;
+    opacity: 1;
+    font-weight: 500;
 }
 
 #nav span {
     margin: 0px 5px;
+    opacity: 0.3;
 }
 
 #nav .active {
-    font-weight: 600;
+    font-weight: 500;
+    opacity: 1;
     coor: var(--salmon);
 }
 
@@ -167,42 +170,42 @@ ul {
     font-weight: 500;
 }
 
-
-/* adjust padding for responsive design */
-
-#title {
+#logo-wrapper {
     position: fixed;
-    textshadow: rgba(0, 0, 0, 0.3) 1px 1px 5px;
-    white-space: nowrap;
+    positin: relative;
     z-index: 1;
-    top: calc(100% - 80px);
-    top: calc(100% - 10vh);
-    text-align: center;
-    font-size: 36px;
+    top: 20px;
     width: 100%;
+    transform-origin: 50% 100%;
 }
 
-#title span {
-    color: white;
-    text-transform: lowercase;
+.logo {
+    width: 80%;
+    max-width: 600px;
 }
 
-#scroll-button {
+#scroll-button-wrapper,
+#logo-wrapper {}
+
+#scroll-button-wrapper {
+    position: fixed;
+    positin: relative;
+    dispay: inline-block;
+    z-index: 1;
+    top: calc(100vh - 85px);
+    botom: 20px;
+    tp: 20px;
+    width: 100%;
+    transform-origin: 50% 0%;
+}
+
+.scroll-button {
     width: 60px;
     height: 60px;
-    display: inline-block;
-    margin-top: 20px;
-    overflow: visible;
-}
-
-#scroll-button svg {
-    width: 100%;
-    height: 100%;
-    position: relative;
     cursor: pointer;
 }
 
-#scroll-button svg:hover {
+.scroll-button:hover {
     opacity: 0.3;
 }
 
@@ -302,25 +305,31 @@ ul {
 }
 
 #filters p {
-    color: var(--light-gray);
-    opacity: 0.5;
-    font-size: 15px;
+    color: var(--dark-gray);
+    opacity: 1;
+    font-size: 14px;
     font-tyle: italic;
     display: inline-block;
-    margin: 0px 10px 0px 10px;
+    margin: 0px 6px;
     cursor: pointer;
+    background-color: rgb(242, 245, 247);
+    padding: 3px 15px;
+    border-radius: 30px;
+    font-weight: 600;
 }
 
 #filters p:hover {
     opacity: 1;
     coor: var(--salmon);
     font-weight: 600;
+    background-color: var(--salmon);
 }
 
 #filters .active {
     opacity: 1;
     coor: var(--salmon);
     font-weight: 600;
+    background-color: var(--salmon);
 }
 
 #work {
@@ -393,6 +402,9 @@ ul {
     margin: 0px;
     display: inline;
     cursor: pointer;
+    font-weight: 500;
+    text-hadow: 1px 1px 0px rgba(0, 0, 0, 0.1);
+    font-wight: 600;
 }
 
 #work .open:hover {
@@ -501,6 +513,7 @@ ul {
     font-size: 14px;
     letter-spacing: .86px;
     font-family: 'Source Code Pro', 'Courier STD', monospace;
+    font-weight: 500;
     text-transform: uppercase;
     margin-right: 20px;
 }
