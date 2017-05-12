@@ -67,7 +67,7 @@
     #work .right {
         text-align: left;
     }
-    #work img {
+    #work img-container {
         width: 100%;
     }
     #work .left .desc {
