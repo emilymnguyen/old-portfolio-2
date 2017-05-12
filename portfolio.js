@@ -32,12 +32,20 @@ function changePage(button) {
 
 function expandWork(button) {
     $('body').addClass('no-scroll');
-    $('#work-expand').css('display', "block");
+    //  $('#work-expand').css('display', "block");
+    $('#work-expand').fadeIn(200);
 }
 
 function closeWork() {
     $('body').removeClass('no-scroll');
-    $('#work-expand').css('display', "none");
+    $('#work-expand').fadeOut(200, "swing", function () {
+        // Show to reset scroll then hide again
+        $('#work-expand').css("visibility", "hidden");
+        $('#work-expand').css("display", "block");
+        $('#work-expand .overlay').scrollTop(0);
+        $('#work-expand').css("display", "none");
+        $('#work-expand').css("visibility", "visible");
+    });
 }
 var main = function () {
     /* Show intro animation */
@@ -61,22 +69,12 @@ var main = function () {
         $('#intro svg').css('margin-top', '2000px');
         $('#title-table').css('position', 'relative');
         $('#title-table').css('margin-top', '2000px');
-        /*
-                $('#scroll-button-wrapper').css('position', 'absolute');
-         $('#scroll-button-wrapper').css('margin-top', '2000px');
-         $('#logo-wrapper').css('position', 'absolute');
-         $('#logo-wrapper').css('margin-top', '2000px'); */
     }
     else {
         $('#intro svg').css('margin-top', '0px');
         $('#intro svg').css('position', 'fixed');
         $('#title-table').css('margin-top', '0px');
         $('#title-table').css('position', 'fixed');
-        /*
-               $('#scroll-button-wrapper').css('margin-top', '0px');
-               $('#scroll-button-wrapper').css('position', 'fixed');
-               $('#logo-wrapper').css('position', 'fixed');
-               $('#logo-wrapper').css('margin-top', '0px'); */
     }
     /* Un-fix intro on scroll */
     $(window).scroll(function () {
@@ -113,6 +111,18 @@ var main = function () {
     /* Nav */
     $('#nav span').click(function () {
         changePage(this);
+    });
+    /* Footer link */
+    $('.footer p').click(function () {
+        // Shake if contact page is already active
+        if ($('#contact').hasClass('active')) {
+            $('h1:contains("Contact")').effect("shake", {
+                times: 2
+                , distance: 10
+            }, 400);
+        }
+        // Otherwise, change to contact page
+        else changePage($('#nav span:contains("Contact")'));
     });
     /* Work filters */
     $('#filters p').click(function () {

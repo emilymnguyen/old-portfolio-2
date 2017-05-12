@@ -1,5 +1,5 @@
 #intro {
-    background-color: var(--salmon);
+    background-color: var(--blue);
     /* 100vh + animation height + 200px */
     height: calc(100vh + 2000px);
     position: relative;

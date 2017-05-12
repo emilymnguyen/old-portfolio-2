@@ -1,10 +1,8 @@
 :root {
-    --salmon: #f27360;
-    --salmon: #EC6A68;
-    --salmon: #94B9CB;
-    --salmon: #93CAE5;
+    --blue: #93CAE5;
     --dark-gray: #272A2D;
     --gray: #6A7279;
+    --source-code-pro: 'Source Code Pro', 'Courier STD', monospace;
 }
 
 html,
@@ -50,7 +48,8 @@ p {
 
 a,
 #scroll-button svg,
-#filters p {
+#filters p,
+.footer p {
     -o-transition: .4s;
     -ms-transition: .4s;
     -moz-transition: .4s;
@@ -89,7 +88,7 @@ a {
 }
 
 .underline {
-    background-color: var(--salmon);
+    background-color: var(--blue);
     height: 4px;
     width: 120px;
     text-align: center;
@@ -116,23 +115,23 @@ a {
 }
 
 #nav p {
-    font-family: 'Source Code Pro', 'Courier STD', monospace;
-    color: var(--salmon);
+    font-amily: var(--source-code-pro);
     color: var(--dark-gray);
-    clor: var(--light-gray);
     font-weight: 400;
     font-size: 15px;
     letter-spacing: 0.2px;
     margin: 12px 20px;
     cursor: pointer;
     text-transform: uppercase;
-    backgrond-color: rgba(236, 106, 104, 0.92);
-    backround-color: rgba(255, 255, 255, 0.95);
+    /* */
+    text-transform: none;
+    font-weight: 600;
+    letter-spacing: 0px;
 }
 
 #nav span:not(.active):hover {
     opacity: 1;
-    font-weight: 500;
+    font-weght: 500;
 }
 
 #nav span {
@@ -141,9 +140,9 @@ a {
 }
 
 #nav .active {
-    font-weight: 500;
+    font-weght: 500;
     opacity: 1;
-    coor: var(--salmon);
+    coor: var(--blue);
 }
 
 #nav li {
@@ -278,7 +277,7 @@ ul {
 }
 
 .date {
-    font-family: 'Source Code Pro', 'Courier STD', monospace;
+    font-family: var(--source-code-pro);
     display: block;
     font-weight: 400;
     text-transform: uppercase;
@@ -293,41 +292,29 @@ ul {
     margin: 10px 0px 60px 0px;
 }
 
-#filters span {
-    color: var(--dark-gray);
-    text-transform: uppercase;
-    font-style: normal;
-    font-size: 12px;
-    font-family: 'Source Code Pro', 'Courier STD', monospace;
-    display: none;
-}
-
 #filters p {
     color: var(--dark-gray);
     opacity: 1;
-    font-size: 14px;
-    font-tyle: italic;
+    font-size: 13px;
     display: inline-block;
-    margin: 0px 6px;
+    margin: 0px 4px;
     cursor: pointer;
     background-color: rgb(242, 245, 247);
-    padding: 3px 15px;
+    padding: 1px 13px;
     border-radius: 30px;
     font-weight: 600;
 }
 
 #filters p:hover {
     opacity: 1;
-    coor: var(--salmon);
     font-weight: 600;
-    background-color: var(--salmon);
+    background-color: var(--blue);
 }
 
 #filters .active {
     opacity: 1;
-    coor: var(--salmon);
     font-weight: 600;
-    background-color: var(--salmon);
+    background-color: var(--blue);
 }
 
 #work {
@@ -373,7 +360,7 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--salmon);
+    background-color: var(--blue);
 }
 
 #work .desc p {
@@ -392,8 +379,8 @@ ul {
 }
 
 #work .open {
-    font-family: 'Source Code Pro', 'Courier STD', monospace;
-    color: var(--salmon);
+    font-family: var(--source-code-pro);
+    color: var(--blue);
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: .86px;
@@ -479,7 +466,7 @@ ul {
     width: 100vw;
     /* margin-left: half of the side margins */
     margin: 30px 0px 30px -15vw;
-    background-color: var(--salmon);
+    background-color: var(--blue);
     display: -ms-flexbox;
     display: flex;
     display: -webkit-box;
@@ -510,14 +497,14 @@ ul {
     text-align: right;
     font-size: 14px;
     letter-spacing: .86px;
-    font-family: 'Source Code Pro', 'Courier STD', monospace;
+    font-family: var(--source-code-pro);
     font-weight: 500;
     text-transform: uppercase;
     margin-right: 20px;
 }
 
 #contact .labels a {
-    color: var(--salmon);
+    color: var(--blue);
 }
 
 #contact .links {
@@ -539,12 +526,12 @@ ul {
 
 #push {
     height: 80px;
-    background-color: white;
 }
 
 .footer {
-    background-color: var(--salmon);
-    backgrond-color: rgba(0, 0, 0, .04);
+    background-color: var(--blue);
+    background-color: rgba(0, 0, 0, .045);
+    backround-color: rgba(242, 245, 247, 0.9);
     position: absolute;
     right: 0;
     bottom: 0;
@@ -553,15 +540,17 @@ ul {
     text-align: center;
 }
 
-.footer a {
+.footer p {
     display: inline-block;
     color: #fff;
-    coor: var(--light-gray);
-    font-size: 14px;
+    color: var(--dark-gray);
+    opacity: 0.8;
+    font-size: 15px;
     font-weight: 600;
-    margin-top: 30px;
+    margin-top: 27px;
+    cursor: pointer;
 }
 
-.footer a:hover {
+.footer p:hover {
     opacity: 0.2;
 }
