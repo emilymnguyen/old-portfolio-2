@@ -1,5 +1,4 @@
 @media only screen and (max-width: 900px) {
-
     #work .left p,
     #work .left h2,
     #work .left .button {
@@ -22,8 +21,6 @@
         margin-top: calc(1vw + 1vh);
     }
 }
-
-
 
 @media only screen and (max-width: 650px) {
     h2 {
@@ -98,15 +95,6 @@
         padding: 0;
         white-space: nowrap;
         font-size: 15px;
-    }
-}
-
-@media only screen and (max-height: 350px) {
-    #intro {
-        display: none;
-    }
-    #title {
-        display: none;
     }
 }
 

@@ -26,7 +26,7 @@
 }
 
 #logo-wrapper {
-    -skrollr-animation-name: logo-animation;
+    -skrollr-animation-name: loo-animation;
 }
 
 @-skrollr-keyframes logo-animation {
@@ -40,17 +40,32 @@
     }
 }
 
+#gap {
+    -skrollr-animation-name: gap-animation;
+}
+
+@-skrollr-keyframes gap-animation {
+    0 {
+        height: 1%;
+    }
+    1800 {
+        height: 100%;
+    }
+}
+
 #scroll-button-wrapper {
-    -skrollr-animation-name: scroll-button-animation;
+    -skrollr-animation-name: scrol-button-animation;
 }
 
 @-skrollr-keyframes scroll-button-animation {
     0 {
         transform: translate(0vw, -36vh);
+        botto: 300px;
         z-index: 1;
     }
     1800 {
         transform: translate(0vw, 0vh);
+        botom: 20px;
         z-index: 1;
     }
 }

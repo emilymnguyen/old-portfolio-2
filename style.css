@@ -170,33 +170,31 @@ ul {
     font-weight: 500;
 }
 
-#logo-wrapper {
-    position: fixed;
-    positin: relative;
-    z-index: 1;
-    top: 20px;
-    width: 100%;
-    transform-origin: 50% 100%;
-}
-
 .logo {
     width: 80%;
     max-width: 600px;
 }
 
-#scroll-button-wrapper,
-#logo-wrapper {}
-
-#scroll-button-wrapper {
+#title-table {
     position: fixed;
-    positin: relative;
-    dispay: inline-block;
-    z-index: 1;
-    top: calc(100vh - 85px);
-    botom: 20px;
-    tp: 20px;
+    height: 100%;
     width: 100%;
-    transform-origin: 50% 0%;
+    text-align: center;
+}
+
+#title-container tr:nth-child(1) td {
+    vertical-align: bottom;
+    padding-top: 25px;
+}
+
+#title-container tr:nth-child(3) td {
+    vertical-align: top;
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+
+#gap {
+    height: 1%;
 }
 
 .scroll-button {
