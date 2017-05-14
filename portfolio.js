@@ -47,22 +47,28 @@ function closeWork() {
         $('#work-expand').css("visibility", "visible");
     });
 }
+
+function updateOddEven(label) {
+    if (label == "all") {
+        var item = "#work .item";
+    }
+    else if (label == "ux") {
+        var item = "#work .ux";
+    }
+    else if (label == "gd") {
+        var item = "#work .gd";
+    }
+    var count = 0;
+    $(item).each(function () {
+        $(this).removeClass('odd even');
+        if (count % 2 == 0) $(this).addClass('odd');
+        else $(this).addClass('even');
+        count++;
+    });
+}
 var main = function () {
     /* Show intro animation */
     $("#intro svg").css("display", "inline-block");
-    /* Load/destroy skrollr 
-    // initialize skrollr if the window width is large enough
-    if ($(window).height() < 350) {
-        skrollr.init({
-            forceHeight: false
-        });
-    } 
-    // disable skrollr if the window is resized below 768px wide
-    $(window).on('resize', function () {
-        if ($(window).height() <= 350) {
-            skrollr.init().destroy(); // skrollr.init() returns the singleton created above
-        }
-    }); */
     /* Un-fix intro on load */
     if ($(window).scrollTop() > 2000) {
         $('#intro svg').css('position', 'relative');
@@ -134,20 +140,30 @@ var main = function () {
         // Get new active filter label
         var filter = $('#filters .active').text();
         // Filter: all
-        if (filter == "all") $('#work .item').slideDown();
+        if (filter == "all") {
+            updateOddEven("all");
+            $('#work .item').slideDown();
+        }
         // Filter: UI/UX
         else if (filter == "UI/UX") {
+            updateOddEven("ux");
             $('.gd').slideUp();
             $('.ux').slideDown();
         }
         // Filter: graphic design
         else if (filter == "graphic design") {
+            updateOddEven("gd");
             $('.ux').slideUp();
             $('.gd').slideDown();
         }
     });
     /* Work open/close buttons */
     $('#work .open').click(function () {
+        expandWork(this);
+        var link = $(this).find('.link').text();
+        $("#work-expand").load(link);
+    });
+    $('#work .img-container').click(function () {
         expandWork(this);
     });
     $('#work-expand .close p').click(function () {
