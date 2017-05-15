@@ -164,6 +164,8 @@ var main = function () {
         $("#work-expand").load(link);
     });
     $('#work .img-container').click(function () {
+        var link = $(this).closest('.item').find('.link').text();
+        $("#work-expand").load(link);
         expandWork(this);
     });
     $('#work-expand .close p').click(function () {
