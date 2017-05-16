@@ -1,44 +1,7 @@
-#intro {
-    background-color: var(--blue);
-    /* 100vh + animation height + 200px */
-    height: calc(100vh + 2000px);
-    position: relative;
-    z-index: -100;
-}
 
-#svg-container {
-    width: 100vw;
-    height: 100vh;
-}
 
-#intro svg {
-    position: fixed;
-    z-index: 0;
-    height: 100vh;
-    width: 100vw;
-    display: none;
-}
 
-#tile,
-#intro svg {
-    -webkit-backface-visibility: hidden;
-    -webkit-transform: translateZ(0);
-}
 
-#logo-wrapper {
-    -skrollr-animation-name: loo-animation;
-}
-
-@-skrollr-keyframes logo-animation {
-    0 {
-        transform: translate(0vw, 38vh);
-        z-index: 1;
-    }
-    1800 {
-        transform: translate(0vw, 0vh);
-        z-index: -1;
-    }
-}
 
 #gap {
     -skrollr-animation-name: gap-animation;
@@ -53,22 +16,6 @@
     }
 }
 
-#scroll-button-wrapper {
-    -skrollr-animation-name: scrol-button-animation;
-}
-
-@-skrollr-keyframes scroll-button-animation {
-    0 {
-        transform: translate(0vw, -36vh);
-        botto: 300px;
-        z-index: 1;
-    }
-    1800 {
-        transform: translate(0vw, 0vh);
-        botom: 20px;
-        z-index: 1;
-    }
-}
 
 #intro svg {
     -skrollr-animation-name: intro-animation;
