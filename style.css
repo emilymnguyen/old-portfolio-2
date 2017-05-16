@@ -226,6 +226,8 @@ ul {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     max-width: 900px;
+    /* viewport - nav and footer */
+    min-height: calc(100vh - 260px);
 }
 
 #about {
@@ -357,7 +359,6 @@ ul {
     letter-sacing: 0.2px;
 }
 
-
 #work h2 {
     margin: 15px 0px 0px 0px;
     letter-spacing: 0.2px;
@@ -366,6 +367,7 @@ ul {
 #work .open .link {
     display: none;
 }
+
 #work .open {
     font-family: var(--source-code-pro);
     color: var(--blue);
@@ -376,7 +378,6 @@ ul {
     display: inline;
     cursor: pointer;
     font-weight: 500;
-   
 }
 
 #work .open:hover {
@@ -389,9 +390,8 @@ ul {
     padding-left: 31px;
 }
 
-
 #work .odd {
-    text-align:left;
+    text-align: left;
 }
 
 #work .odd .img-container {
@@ -461,6 +461,7 @@ ul {
 }
 
 */
+
 #work-expand .close {
     position: fixed;
     width: 100%;
