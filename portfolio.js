@@ -67,6 +67,16 @@ function updateOddEven(label) {
     });
 }
 var main = function () {
+    // $('body').toggleClass('light-off');
+    $('#toggle').toggleClass('on');
+    $('.logo').click(function () {
+        $('body').toggleClass('light-off');
+        $('#toggle').toggleClass('on');
+    });
+    $('#toggle').click(function () {
+        $('body').toggleClass('light-off');
+        $(this).toggleClass('on');
+    });
     /* Intro scroll */
     $('.scroll-button').click(function () {
         // Scroll to about me
