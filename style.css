@@ -193,14 +193,15 @@ ul {
     height: 100vh;
     width: 100vw;
     background-color: var(--blue);
-    backgrund-color: #444b51;
-    backgrond-color: #3b444c;
+    /*
+    background-color: #444b51;
+    background-color: #3b444c; */
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    transition: 1s;
+    transition: background-color 1s;
 }
 
 #bulb {
@@ -222,11 +223,15 @@ ul {
 }
 
 .logo {
-    width: 70vw;
-    max-width: 700px;
+    width: 77vw;
+    max-width: 900px;
     display: inline-block;
     clear: both;
     cursor: pointer;
+}
+
+.lowercase {
+    display: none;
 }
 
 .scroll-button {
@@ -234,6 +239,7 @@ ul {
     height: 50px;
     cursor: pointer;
     display: inline-block;
+    padding-bottom: 25px;
 }
 
 .scroll-button:hover {
@@ -258,7 +264,7 @@ ul {
     -ms-flex-pack: center;
     -webkit-box-pack: center;
     justify-content: center;
-    width: 75vw;
+    width: 70vw;
     padding: 30px 0px 50px;
     text-align: center;
     -ms-flex-wrap: wrap;
@@ -374,28 +380,28 @@ ul {
 #work .item {
     text-align: left;
     width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 80px;
 }
 
 #work img {
     width: 100%;
-    paddig: 40px;
+    max-width: 200px;
+    vertical-align: middle;
 }
 
 #work .img-container {
     width: 50%;
+    max-height: 400px;
     display: inline-block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--blue);
-    cursor: pointer;
+    background-color: #f4f5f7;
+    curor: pointer;
     overflow: hidden;
+    display: relative;
+    text-align: center;
 }
 
 #work .desc p {
     margin: 20px 0px 5px 0px;
-    letter-sacing: 0.2px;
 }
 
 #work h2 {
@@ -407,29 +413,44 @@ ul {
     display: none;
 }
 
-#work .open {
+#work .open,
+#work span {
+    display: inline;
+    margin: 0px;
+}
+
+#work .links-wrapper,
+#work a {
     font-family: var(--source-code-pro);
     color: var(--blue);
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: .8px;
-    margin: 0px;
-    display: inline;
-    cursor: pointer;
     font-weight: 500;
+}
+
+#work .links-wrapper {
+    margin-top: 18px;
+}
+
+#work .open {
+    curor: pointer;
+    letter-spacing: 1.5px;
+    font-size: 14.5px;
 }
 
 .light-off #work .open {
     color: var(--dark);
 }
 
-#work .open:hover {
+#work .open:hover,
+#work a:hover {
     opacity: 0.5;
 }
 
 #work .odd p,
 #work .odd h2,
-#work .odd .open {
+#work .odd .links-wrapper {
     padding-left: 31px;
 }
 
@@ -461,7 +482,7 @@ ul {
 
 #work .even p,
 #work .even h2,
-#work .even .open {
+#work .even .links-wrapper {
     padding-right: 31px;
 }
 

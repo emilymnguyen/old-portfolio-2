@@ -1,25 +1,19 @@
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-/* Styles */
-    
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    /* Styles */
 }
 
 @media only screen and (max-width: 900px) {
-    #work .left p,
-    #work .left h2,
-    #work .left .button {
+    #work .odd p,
+    #work .odd h2,
+    #work .odd .links-wrapper {
         padding-left: 30px;
     }
-    #work .right p,
-    #work .right h2,
-    #work .right .button {
+    #work .even p,
+    #work .even h2,
+    #work .even .links-wrapper {
         padding-right: 30px;
     }
-    #work .desc h2 {
-        margin-top: 0px;
-    }
-    #work .desc p {
-        margin: 12px 0px 0px 0px;
-    }
+  
     #scroll-button {
         width: 7vw;
         height: 7vw;
@@ -60,28 +54,28 @@
         line-height: 22px;
         padding: 0px 12px;
     }
-    #work .right {
+    #work .even {
         text-align: left;
     }
     #work .img-container {
         width: 100%;
     }
-    #work .left .desc {
+    #work .odd .desc {
         width: 100%;
         clear: both;
     }
-    #work .right .desc {
+    #work .even .desc {
         clear: both;
         width: 100%;
     }
-    #work .left p,
-    #work .left h2,
-    #work .left .button {
+    #work .odd p,
+    #work .odd h2,
+    #work .odd .links-wrapper {
         padding: 0px 8px;
     }
-    #work .right p,
-    #work .right h2,
-    #work .right .button {
+    #work .even p,
+    #work .even h2,
+    #work .even .links-wrapper {
         padding: 0px 8px;
     }
     #work .desc {
@@ -93,9 +87,7 @@
     #content .links {
         margin-left: 4px;
     }
-    #nav span {
-        margin: 0px -2px;
-    }
+
     #nav p {
         padding: 0;
         white-space: nowrap;
@@ -104,10 +96,7 @@
 }
 
 @media only screen and (max-device-width: 480px) {
-    #intro {
-        display: none;
-    }
-    #title {
-        display: none;
+    body {
+        font-size: 140%;
     }
 }

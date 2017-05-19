@@ -113,22 +113,27 @@ var main = function () {
         // Filter: all
         if (filter == "all") {
             updateOddEven("all");
-            $('#work .item').slideDown();
+            //  $('#work .item').slideDown();
+            $('#work .item').show();
         }
         // Filter: UI/UX
         else if (filter == "UI/UX") {
             updateOddEven("ux");
-            $('.gd').slideUp();
-            $('.ux').slideDown();
+            //    $('.gd').slideUp();
+            //  $('.ux').slideDown();
+            $('.gd').hide();
+            $('.ux').show();
         }
         // Filter: graphic design
         else if (filter == "graphic design") {
             updateOddEven("gd");
-            $('.ux').slideUp();
-            $('.gd').slideDown();
+            //  $('.ux').slideUp();
+            //    $('.gd').slideDown();
+            $('.ux').hide();
+            $('.gd').show();
         }
     });
-    /* Work open/close buttons */
+    /* Work open/close buttons 
     $('#work .open').click(function () {
         expandWork(this);
         var link = $(this).find('.link').text();
@@ -141,6 +146,6 @@ var main = function () {
     });
     $('#work-expand .close p').click(function () {
         closeWork();
-    });
+    }); */
 };
 $(document).ready(main);
