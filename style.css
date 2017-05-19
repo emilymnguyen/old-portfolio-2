@@ -52,7 +52,8 @@ a,
 #filters p,
 .footer p,
 .open,
-.close {
+.close,
+#nav span {
     -o-transition: .3s;
     -ms-transition: .3s;
     -moz-transition: .3s;
@@ -239,7 +240,7 @@ ul {
     height: 50px;
     cursor: pointer;
     display: inline-block;
-    padding-bottom: 25px;
+    padding-bottom: 10px;
 }
 
 .scroll-button:hover {
@@ -276,20 +277,22 @@ ul {
 
 #about {
     padding: 0px 20px;
-    max-with: 690px;
 }
 
 #bio p {
     font-size: 19px;
     /* 0.4 px*/
-    leter-spacing: 0.25px;
+    letter-spacing: 0.25px;
     line-height: 34px;
     max-width: 690px;
     display: inline-block;
+    width: 70vw;
 }
 
 #showcase {
     margin: 60px 0px;
+    width: 80vw;
+    max-width: 900px;
 }
 
 #showcase tr:nth-child(1) td {
@@ -426,11 +429,11 @@ ul {
     font-size: 14px;
     text-transform: uppercase;
     letter-spacing: .8px;
-    font-weight: 500;
 }
 
 #work .links-wrapper {
     margin-top: 18px;
+    font-weight: 600;
 }
 
 #work .open {
@@ -598,9 +601,9 @@ ul {
     float: left;
     text-align: right;
     font-size: 14px;
-    letter-spacing: .9px;
+    letter-spacing: 1.3px;
     font-family: var(--source-code-pro);
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
     margin-right: 20px;
 }
