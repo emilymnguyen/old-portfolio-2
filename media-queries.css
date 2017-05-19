@@ -101,4 +101,34 @@
     html {
         font-size: 40px;
     }
+    #content {
+        width: 85vw;
+    }
+    #work .even {
+        text-align: left;
+    }
+    #work .img-container {
+        width: 100%;
+    }
+    #work .odd .desc {
+        width: 100%;
+        clear: both;
+    }
+    #work .even .desc {
+        clear: both;
+        width: 100%;
+    }
+    #work .odd p,
+    #work .odd h2,
+    #work .odd .links-wrapper {
+        padding: 0px 8px;
+    }
+    #work .even p,
+    #work .even h2,
+    #work .even .links-wrapper {
+        padding: 0px 8px;
+    }
+    #work .desc {
+        margin-top: 20px;
+    }
 }
