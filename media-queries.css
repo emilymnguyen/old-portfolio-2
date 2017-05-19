@@ -13,26 +13,24 @@
     #work .even .links-wrapper {
         padding-right: 30px;
     }
-  
     #scroll-button {
         width: 7vw;
         height: 7vw;
         margin-top: calc(1vw + 1vh);
     }
-
 }
 
 @media only screen and (max-width: 650px) {
     h2 {
-        font-size: 24px;
+        font-size: 1.5em;
     }
     #showcase p {
-        font-size: 15px;
-        line-height: 23px;
+        font-size: 1em;
+        line-height: 1.5em;
         padding: 0px 12px;
     }
-    #showcase .date {
-        font-size: 11px;
+    #showcase .scp {
+        font-size: 0.6875em;
     }
     #showcase img {
         height: 70%;
@@ -45,14 +43,14 @@
         padding-right: 0px;
     }
     #showcase h2 {
-        font-size: 18px;
+        font-size: 1.125em;
     }
     #about {
         padding: 5px;
     }
     #showcase p {
-        font-size: 14px;
-        line-height: 22px;
+        font-size: 0.875em;
+        line-height: 1.375em;
         padding: 0px 12px;
     }
     #work .even {
@@ -88,16 +86,19 @@
     #content .links {
         margin-left: 4px;
     }
-
     #nav p {
         padding: 0;
         white-space: nowrap;
-        font-size: 15px;
+        font-size: 0.9375em;
+    }
+    #showcase {
+        width: 90vw;
     }
 }
 
 @media only screen and (max-device-width: 480px) {
-    body,html {
-        font-size: 140%;
+    body,
+    html {
+        font-size: 40px;
     }
 }
