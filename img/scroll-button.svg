@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.2 (39069) - http://www.bohemiancoding.com/sketch -->
+   
+    <defs>
+        <polygon id="path-1" points="31.449 31.4491 31.449 0.0003 0 0.0003 0 31.4491 31.449 31.4491"></polygon>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop" transform="translate(-428.000000, -468.000000)">
+            <g id="Page-1" transform="translate(428.000000, 468.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Clip-2"></g>
+                <path d="M15.7896,23.3901 L6.6496,13.2321 L9.6226,10.5561 L15.7896,17.4101 L21.9566,10.5561 L24.9296,13.2321 L15.7896,23.3901 Z M15.7246,0.0001 C7.0406,0.0001 -0.0004,7.0401 -0.0004,15.7251 C-0.0004,24.4091 7.0406,31.4491 15.7246,31.4491 C24.4096,31.4491 31.4496,24.4091 31.4496,15.7251 C31.4496,7.0401 24.4096,0.0001 15.7246,0.0001 L15.7246,0.0001 Z" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

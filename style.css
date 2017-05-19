@@ -161,12 +161,16 @@ a {
 
 #nav p {
     color: var(--dark-gray);
-    font-size: 15px;
+    font-size: 16px;
     margin: 12px 20px;
     cursor: pointer;
     /* */
     font-weight: 600;
     letter-spacing: 0.1px;
+}
+
+#nav a {
+    color: var(--dark-gray);
 }
 
 #nav span:not(.active):hover {
@@ -231,9 +235,6 @@ ul {
     cursor: pointer;
 }
 
-.lowercase {
-    display: none;
-}
 
 .scroll-button {
     width: 50px;
