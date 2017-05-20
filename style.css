@@ -429,15 +429,18 @@ ul {
 #work .links-wrapper a {
     padding-bottom: 0.1875em;
     border-bottom: 0.125em solid var(--blue);
+    boder-bottom: 2px solid var(--blue);
     color: var(--gray);
 }
 
-#wok .open {
-    curor: pointer;
+.light-off #work .open,
+.light-off #work .links-wrapper a {
+    border-bottom: 0.125em solid var(--dark-gray);
+    borde-bottom: 2px solid var(--dark-gray);
 }
 
-.light-off #work .open {
-    color: var(--dark);
+#work .open {
+    curor: pointer;
 }
 
 #work .open:hover,
@@ -579,6 +582,10 @@ ul {
     color: var(--blue);
 }
 
+.light-off #contact td:nth-child(1) a {
+    color: var(--dark-gray);
+}
+
 #contact td:nth-child(1) {
     text-align: right;
     padding-right: 0.9em;
@@ -595,20 +602,6 @@ ul {
 }
 
 
-}
-.light-off #contact .labels a {
-    color: var(--dark);
-}
-#contact .links {
-    float: right;
-    text-align: left;
-    font-size: 1.0625em;
-    letter-spacing: 0.01875em;
-    color: var(--dark-gray);
-    margn-left: 20px;
-}
-#contact a {
-    color: var(--gray);
 }
 #contact a:hover {
     opacity: 0.2;
