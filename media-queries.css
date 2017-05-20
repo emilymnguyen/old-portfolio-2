@@ -130,9 +130,6 @@
     #work .desc {
         margin-top: 20px;
     }
-    #work .img-container {
-        max-height: 600px;
-    }
     #showcase {
         width: 90vw;
     }
@@ -146,6 +143,7 @@
     }
     #showcase .scp {
         font-size: 0.8em;
+        line-height: 0.8em;
     }
     #bio p {
         max-width: none;
