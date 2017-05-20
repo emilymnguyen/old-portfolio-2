@@ -76,11 +76,14 @@
     #work .desc {
         margin-top: 20px;
     }
-    #content .labels {
+    #contact .labels {
         margin-right: 4px;
     }
-    #content .links {
+    #contact .links {
         margin-left: 4px;
+    }
+    #contact {
+        width: 100vw;
     }
     #nav p {
         padding: 0;
@@ -142,15 +145,15 @@
         padding: 0px 12px;
     }
     #showcase .scp {
-                font-size: 1em;
+        font-size: 0.8em;
     }
     #bio p {
         max-width: none;
         width: 85vw;
     }
     .logo.narrow {
-    display: inline-block;
-}
+        display: inline-block;
+    }
     .logo.wide {
         display: none;
     }
