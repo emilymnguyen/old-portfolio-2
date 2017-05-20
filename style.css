@@ -322,7 +322,7 @@ ul {
 
 #showcase .scp {
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 1.25em;
     color: var(--dark-gray);
     line-height: 1em;
 }
@@ -383,13 +383,13 @@ ul {
 
 #work img {
     width: 100%;
-    max-width: 200px;
+    max-width: 12.5em;
     vertical-align: middle;
 }
 
 #work .img-container {
     width: 50%;
-    max-height: 400px;
+    max-height: 25em;
     display: inline-block;
     background-color: #f4f5f7;
     curor: pointer;
@@ -545,7 +545,7 @@ ul {
 
 #contact .container {
     margin-top: 20px;
-    line-height: 45px;
+    line-height: 2.8125em;
 }
 
 #contact .labels {

@@ -138,7 +138,11 @@
     }
     #showcase p {
         font-size: 0.875em;
-        line-height: 1.375em;
+        line-height: 1.42em;
         padding: 0px 12px;
+    }
+    #bio p {
+        max-width: none;
+        width: 85vw;
     }
 }
