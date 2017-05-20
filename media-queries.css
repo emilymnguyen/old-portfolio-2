@@ -143,7 +143,6 @@
     }
     #showcase .scp {
         font-size: 0.8em;
-        line-height: 0.8em;
     }
     #bio p {
         max-width: none;
@@ -156,6 +155,6 @@
         display: none;
     }
     .scroll-button {
-        padding: 1.25em 0;
+        padding: 1.5em 0;
     }
 }
