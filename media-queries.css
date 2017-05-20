@@ -155,4 +155,7 @@
     .logo.wide {
         display: none;
     }
+    .scroll-button {
+        padding: 1.25em 0;
+    }
 }
