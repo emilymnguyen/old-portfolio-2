@@ -134,15 +134,24 @@
         width: 90vw;
     }
     #showcase h2 {
-        font-size: 1.125em;
+        font-size: 1.225em;
     }
     #showcase p {
         font-size: 0.875em;
-        line-height: 1.42em;
+        line-height: 1.62em;
         padding: 0px 12px;
+    }
+    #showcase .scp {
+                font-size: 1em;
     }
     #bio p {
         max-width: none;
         width: 85vw;
+    }
+    .logo.narrow {
+    display: inline-block;
+}
+    .logo.wide {
+        display: none;
     }
 }
