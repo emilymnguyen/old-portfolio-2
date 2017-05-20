@@ -240,8 +240,8 @@ ul {
 }
 
 .scroll-button {
-    width: 50px;
-    height: 50px;
+    width: 3.125em;
+    height: 3.125em;
     cursor: pointer;
     display: inline-block;
     padding-bottom: 10px;
@@ -276,10 +276,6 @@ ul {
     max-width: 900px;
     /* viewport - nav and footer */
     min-height: calc(100vh - 260px);
-}
-
-#about {
-    pading: 0px 20px;
 }
 
 #bio p {
@@ -326,9 +322,9 @@ ul {
 
 #showcase .scp {
     display: inline-block;
-    margin-top: 1.25em;
+    margin-top: 1.65em;
     color: var(--dark-gray);
-    line-height: 1em;
+    line-height: 1.3em;
 }
 
 #filters {
@@ -387,7 +383,6 @@ ul {
 
 #work img {
     width: 100%;
-    max-wdth: 12.5em;
     vertical-align: middle;
 }
 
@@ -403,11 +398,11 @@ ul {
 }
 
 #work .desc p {
-    margin: 1.25em 0px 1.5em 0px;
+    margin: 1.25em 0 1.5em 0;
 }
 
 #work h2 {
-    margin: 0.9375em 0px 0px 0px;
+    margin: 0.5375em 0 0 0;
     letter-spacing: 0.0125em;
 }
 
@@ -421,14 +416,13 @@ ul {
     margin: 0px;
 }
 
-#work .links-wrapper,
-#work a {
-    color: var(--blue);
-}
-
 #work .links-wrapper {
     margin-top: 1.25em;
     font-weight: 500;
+}
+
+#work a {
+    color: var(--blue);
 }
 
 #work .open,
@@ -572,7 +566,7 @@ ul {
 .scp {
     font-family: var(--source-code-pro);
     text-transform: uppercase;
-    letter-spacing: 1.3px;
+    letter-spacing: 0.08125em;
     font-size: 0.875em;
 }
 
@@ -587,17 +581,17 @@ ul {
 
 #contact td:nth-child(1) {
     text-align: right;
-    padding-right: 15px;
+    padding-right: 0.9em;
 }
 
 #contact td:nth-child(2) {
     text-align: left;
-    padding-left: 15px;
+    padding-left: 0.9em;
 }
 
 #contact td {
     vertical-align: middle;
-    height: 45px;
+    height: 2.8125em;
 }
 
 
