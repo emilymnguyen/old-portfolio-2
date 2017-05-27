@@ -281,7 +281,7 @@ ul {
 
 #bio {
     width: 65vw;
-    max-width: 700px;
+    max-width: 43.75em;
     margin-bottom: 3.75em;
     margin-top: 2.5em;
 }
@@ -389,7 +389,6 @@ ul {
 
 #work .img-container {
     width: 50%;
-    ma-height: 25em;
     display: inline-block;
     background-color: #f4f5f7;
     curor: pointer;
