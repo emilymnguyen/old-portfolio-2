@@ -279,6 +279,9 @@ ul {
     min-height: calc(100vh - 16.1em);
 }
 
+#about {
+    display: none;
+}
 #bio {
     width: 65vw;
     max-width: 43.75em;
@@ -361,9 +364,7 @@ ul {
     color: #fff;
 }
 
-#work {
-    display: none;
-}
+
 
 #work .container {
     display: -ms-flexbox;
