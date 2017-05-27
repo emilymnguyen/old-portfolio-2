@@ -105,6 +105,7 @@ a {
     text-align: center;
     display: inline-block;
     transition: 1s;
+    display: none;
 }
 
 .light-off .underline {
@@ -244,7 +245,7 @@ ul {
     height: 3.125em;
     cursor: pointer;
     display: inline-block;
-    padding-bottom: 10px;
+    padding: .625em 0 .625em 0;
 }
 
 .scroll-button:hover {
@@ -278,57 +279,57 @@ ul {
     min-height: calc(100vh - 260px);
 }
 
+#bio {
+    width: 65vw;
+    max-width: 700px;
+    margin-bottom: 3.75em;
+    margin-top: 2.5em;
+}
+
 #bio p {
-    font-size: 1.1875em;
+    font-size: 1.20em;
     /* 0.4 px*/
     letter-spacing: 0.0156em;
-    line-height: 1.9em;
-    max-width: 690px;
+    line-height: 1.8em;
+    text-align: left;
+}
+
+#bio .item,
+#bio p {
     display: inline-block;
-    width: 70vw;
+    --p-padding: 2em;
 }
 
-#showcase {
-    margin: 3.75em 0em;
-    width: 80vw;
-    max-width: 900px;
+#bio img {
+    width: 25%;
 }
 
-#showcase tr:nth-child(1) td {
-    width: 33%;
+#bio .item {
+    margin: var(--p-padding) 0;
+    display: flex;
+    align-items: center;
 }
 
-#showcase img {
-    height: 90%;
+#bio .item:nth-child(odd) p {
+    padding-left: var(--p-padding);
 }
 
-#showcase td:nth-child(2) img {
-    padding: 10px;
+#bio .narrow {
+    padding-left: var(--p-padding);
+    display: none;
 }
 
-#showcase td:nth-child(3) img {
-    padding: 10px;
+#bio .item:nth-child(even) p {
+    padding-right: var(--p-padding);
+    padding-left: 0.25em;
 }
 
-#showcase tr:nth-child(2) {
-    vertical-align: top;
-}
-
-#showcase p {
-    padding: 0px 30px;
-    margin-bottom: 0px;
-    font-size: 1.0625em;
-}
-
-#showcase .scp {
-    display: inline-block;
-    margin-top: 1.65em;
-    color: var(--dark-gray);
-    line-height: 1.3em;
+#bio .wide {
+    text-align: right;
 }
 
 #filters {
-    margin: 1.875em 0px 4.0625em 0px;
+    margin: 1.875em 0 4.0625em 0;
 }
 
 #filters p {
@@ -388,7 +389,7 @@ ul {
 
 #work .img-container {
     width: 50%;
-    max-height: 25em;
+    ma-height: 25em;
     display: inline-block;
     background-color: #f4f5f7;
     curor: pointer;
@@ -549,22 +550,20 @@ ul {
     display: none;
 }
 
-
-/*
-#contact .container {
-    margin-top: 20px;
-    line-height: 2.8125em;
+#contact .wide {
+    display: none;
 }
 
-#contact .labels {
-    float: left;
-    text-align: right;
-    margin-right: 20px;
+.scp {
+    font-family: var(--source-code-pro);
+    text-transform: uppercase;
+    letter-spacing: 0.08125em;
+    font-size: 0.875em;
 }
-#contact .labels a {
-    color: var(--blue);
+
+#contact {
+    margin-bottom: 10px;
 }
-*/
 
 .scp {
     font-family: var(--source-code-pro);
@@ -578,6 +577,10 @@ ul {
     font-size: 1.125em;
 }
 
+#contact .wide {
+    display: none;
+}
+
 #contact td:nth-child(1) a {
     color: var(--blue);
 }
@@ -586,32 +589,45 @@ ul {
     color: var(--dark-gray);
 }
 
-#contact td:nth-child(1) {
+#contact .wide td:nth-child(1) {
     text-align: right;
     padding-right: 0.9em;
 }
 
-#contact td:nth-child(2) {
+#contact .wide td:nth-child(2) {
     text-align: left;
     padding-left: 0.9em;
 }
 
-#contact td {
+#contact .wide td {
     vertical-align: middle;
-    height: 2.8125em;
+    height: 2.7125em;
 }
 
-
+#contact .narrow {
+    text-align: center;
+    padding-top: 0.625em;
 }
+
+#contact .narrow tr:nth-child(odd) td {
+    padding-bottom: 0.625em;
+}
+
+#contact .narrow tr:nth-child(even) td {
+    padding-bottom: 2.5em;
+}
+
 #contact a:hover {
     opacity: 0.2;
 }
+
 #push {
     height: 5em;
 }
+
 .footer {
     background-color: rgba(0, 0, 0, .045);
-    background-color: rgba(239, 241, 242, 0.6);
+    background-color: rgba(240, 241, 242, 0.6);
     position: absolute;
     right: 0;
     bottom: 0;
@@ -621,6 +637,7 @@ ul {
     display: table-cell;
     vertical-align: middle;
 }
+
 .footer p {
     display: inline-block;
     color: #fff;
@@ -631,6 +648,7 @@ ul {
     margin-top: 1.8875em;
     cursor: pointer;
 }
+
 .footer p:hover {
     opacity: 0.2;
 }

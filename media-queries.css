@@ -14,41 +14,40 @@
         height: 7vw;
         margin-top: calc(1vw + 1vh);
     }
+    #bio {
+        width: 65vw;
+    }
 }
 
 @media only screen and (max-width: 650px) {
+    .logo.narrow {
+        display: inline-block;
+        width: 60vw;
+        min-width: 19.375em;
+    }
+    .logo.wide {
+        display: none;
+    }
+    .scroll-button {
+        padding: 1em 0;
+    }
     h2 {
         font-size: 1.5em;
     }
-    #showcase p {
-        font-size: 1em;
-        line-height: 1.5em;
-        padding: 0px 12px;
+    #bio .item,
+    #bio p {
+        --p-padding: 1.3em;
+        font-size: 1.06em;
     }
-    #showcase .scp {
-        font-size: 0.6875em;
+    #bio .item:nth-child(even) p {
+        padding-left: 0;
     }
-    #showcase img {
-        height: 70%;
+    #bio {
+        width: 70vw;
     }
 }
 
 @media only screen and (max-width: 500px) {
-    #title {
-        padding-left: 0px;
-        padding-right: 0px;
-    }
-    #showcase h2 {
-        font-size: 1.125em;
-    }
-    #about {
-        padding: 5px;
-    }
-    #showcase p {
-        font-size: 0.875em;
-        line-height: 1.375em;
-        padding: 0px 12px;
-    }
     #work .even {
         text-align: left;
     }
@@ -75,15 +74,6 @@
     }
     #work .desc {
         margin-top: 20px;
-    }
-    #contact .labels {
-        margin-right: 4px;
-    }
-    #contact .links {
-        margin-left: 4px;
-    }
-    #contact {
-        width: 100vw;
     }
     #nav p {
         padding: 0;
@@ -93,6 +83,26 @@
     #showcase {
         width: 90vw;
     }
+    #bio .item,
+    #bio p {
+        --p-padding: .9em;
+        font-size: 1.05em;
+    }
+    #bio {
+        width: 80vw;
+        margin-bottom: .625em;
+    }
+    #bio .item {
+        margin: 0 0 1.25em 0;
+        display: inline-block;
+    }
+    #bio .narrow {
+        display: inline-block;
+        margin-left: var(--p-padding);
+    }
+    #bio .wide {
+        display: none;
+    }
 }
 
 @media only screen and (max-device-width: 768px) {
@@ -100,8 +110,37 @@
     html {
         font-size: 40px;
     }
+    .logo.narrow {
+        display: inline-block;
+    }
+    .logo.wide {
+        display: none;
+    }
+    .scroll-button {
+        padding: 1.5em 0;
+    }
     #content {
         width: 85vw;
+    }
+    #bio .item,
+    #bio p {
+        --p-padding: .9em;
+        font-size: 1.05em;
+    }
+    #bio {
+        width: 80vw;
+        margin-bottom: 0.625em;
+    }
+    #bio .item {
+        margin: 0 0 1.25em 0;
+        display: inline-block;
+    }
+    #bio .narrow {
+        display: inline-block;
+        margin-left: var(--p-padding);
+    }
+    #bio .wide {
+        display: none;
     }
     #work .even {
         text-align: left;
@@ -129,32 +168,5 @@
     }
     #work .desc {
         margin-top: 20px;
-    }
-    #showcase {
-        width: 90vw;
-    }
-    #showcase h2 {
-        font-size: 1.225em;
-    }
-    #showcase p {
-        font-size: 0.875em;
-        line-height: 1.62em;
-        padding: 0px 12px;
-    }
-    #showcase .scp {
-        font-size: 0.8em;
-    }
-    #bio p {
-        max-width: none;
-        width: 85vw;
-    }
-    .logo.narrow {
-        display: inline-block;
-    }
-    .logo.wide {
-        display: none;
-    }
-    .scroll-button {
-        padding: 1.5em 0;
     }
 }
