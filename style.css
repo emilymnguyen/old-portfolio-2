@@ -419,6 +419,11 @@ ul {
 #work .links-wrapper {
     margin-top: 1.25em;
     font-weight: 500;
+    line-height: 2.1em;
+}
+
+#work .links-wrapper a {
+    white-space: nowrap;
 }
 
 #work a {
