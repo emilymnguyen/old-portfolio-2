@@ -124,7 +124,7 @@
     }
     #bio .item,
     #bio p {
-        --p-padding: .0em;
+        --p-padding: .9em;
         font-size: 1.05em;
     }
     #bio {

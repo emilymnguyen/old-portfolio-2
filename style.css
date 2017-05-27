@@ -276,7 +276,7 @@ ul {
     flex-wrap: wrap;
     max-width: 900px;
     /* viewport - nav and footer */
-    min-height: calc(100vh - 260px);
+    min-height: calc(100vh - 16.1em);
 }
 
 #bio {
@@ -543,15 +543,6 @@ ul {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-}
-
-#work-epand h2 {
-    margin-bottom: 30px;
-}
-
-#contact {
-    margin-bottom: 50px;
-    display: none;
 }
 
 #contact .wide {
