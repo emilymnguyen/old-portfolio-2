@@ -128,8 +128,7 @@
         font-size: 1.05em;
     }
     #bio {
-        width: 80vw;
-        margin-bottom: 0.625em;
+        margin-bottom: .625em;
     }
     #bio .item {
         margin: 0 0 1.25em 0;
@@ -141,6 +140,9 @@
     }
     #bio .wide {
         display: none;
+    }
+    #bio .item:nth-child(even) p {
+        padding-left: 0;
     }
     #work .even {
         text-align: left;
